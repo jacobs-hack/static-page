@@ -1,45 +1,483 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>jacobsHack! 2021</title>
+    <title>jacobs<i>Hack</i>! 2021</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
   </head>
 
   <body>
+    <!-- NAVIGATION BAR -->
     <nav>
       <div class="container">
         <ul>
-          <li class="what"><a href="#what">What</a></li>
-          <li class="where"><a href="#where">Where</a></li>
-          <li class="who"><a href="#who">Who</a></li>
+          <li class="about"><a href="#about">About</a></li>
+          <li class="schedule"><a href="#schedule">Schedule</a></li>
+          <li class="team"><a href="#team">Team</a></li>
           <li class="faq"><a href="#faq">FAQ</a></li>
           <li class="contact"><a href="#contact">Contact</a></li>
+          <li class="register">
+            <button class="px-3 py-1 tracking-wide text-white transition-colors duration-300 transform bg-blue-600 rounded-xl dark:bg-gray-800 hover:bg-blue-500 dark:hover:bg-gray-700 focus:outline-none focus:bg-blue-500 dark:focus:bg-gray-700" id="register">
+              Register
+            </button>
+          </li>
         </ul>
       </div>
     </nav>
 
+    <!-- MLH BANNER -->
+    <a id="mlh-trust-badge" style="display:block;max-width:120px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/eu-2021/events?utm_source=eu-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=blue" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-blue.svg" alt="Major League Hacking 2021 Hackathon Season" style="width:100%"></a>
+
+    <!-- INTRO -->
     <section id="intro">
-      <h1>Intro</h1>
-    </section>
-    <section id="what">
-      <h1>What</h1>
-    </section>
-    <section id="where">
-      <h1>Where</h1>
-    </section>
-    <section id="who">
-      <h1>Who</h1>
-    </section>
-    <section id="faq">
-      <h1>FAQ</h1>
-    </section>
-    <section id="contact">
-      <h1>Contact</h1>
-    </section>
-    <section id="footer">
-      <h1>Footer</h1>
+      <div class="grid md:grid-cols-2 gap-4 grid-cols-1">
+        <div>
+          <img src="img/jh-logo.png" alt="logo">
+        </div>
+
+        <div id="intro-txt">
+          <div id="intro-txt-1">jacobs<i>Hack</i>!</div><br>
+          <div id="intro-txt-2">November 21st-22nd, 2021</div><br>
+          <button id="register" class="px-4 py-2 tracking-wide text-white transition-colors duration-300 transform bg-blue-600 rounded-xl dark:bg-gray-800 hover:bg-blue-500 dark:hover:bg-gray-700 focus:outline-none focus:bg-blue-500 dark:focus:bg-gray-700">
+            Register Now!
+          </button>
+        </div>
+      </div>
     </section>
 
+    <!-- ABOUT -->
+    <section id="about">
+      <h1 id="about-title">What is jacobs<i>Hack</i>?</h1>
+
+      <p>
+        <b>jacobs<i>Hack</i>! 2021</b>, the 7th edition of jacobs<i>Hack</i>!, is a student-run hackathon where student hackers from Jacobs University Bremen come together to create and collaborate on kick-ass projects over the course of <b>24 hours</b> filled with programming, tech talks, games, and epic Nerf gun battles. Due to the current pandemic situation, this year's event will be available only to the <b>students of JUB</b>.<br><br>
+        This year's theme is: <br>
+        <span id="theme">"Lost in Atlantis"</span>
+      </p>
+      
+      <img src="img/fish.png" alt="fish" id="fish-image">
+    </section>
+    
+    <!-- SCHEDULE -->
+    <section id="schedule">
+      <h1 id="sched-title">Schedule<h1>
+      <div class="overflow-auto lg:overflow-visible ">
+        <table class="table text-gray-300 border-separate space-y-6 text-md">
+          <thead class="text-xl">
+            <tr>
+              <th class="p-3">Start</th>
+              <th class="p-3">End</th>
+              <th class="p-3">Event </th>
+              <th class="p-3">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="p-3">
+                09:00
+              </td>
+              <td class="p-3">
+                10:00
+              </td>
+              <td class="p-3 font-bold">
+                Opening Ceremony
+              </td>
+              <td class="p-3">
+                Text
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section id="team">
+      <h1 id="team-title">Organizing Team</h1>
+
+      <div class="flex items-center justify-center">
+        <div class="grid gap-8 mt-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+          <div class="w-full max-w-xs text-center">
+            <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="https://www.mitblick.de/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png" alt="avatar"/>
+
+            <div class="mt-2">
+              <h3 class="text-lg font-semibold">Daniela Tsayem</h3>
+              <span class="mt-1 font-medium">Main Organizer and Head of Design</span>
+            </div>
+          </div>
+
+          <div class="w-full max-w-xs text-center">
+            <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="https://www.mitblick.de/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png" alt="avatar"/>
+
+            <div class="mt-2">
+              <h3 class="text-lg font-semibold">Denisa Checiu</h3>
+              <span class="mt-1 font-medium">Main Organizer</span>
+            </div>
+          </div>
+
+          <div class="w-full max-w-xs text-center">
+            <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="https://www.mitblick.de/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png" alt="avatar"/>
+
+            <div class="mt-2">
+              <h3 class="text-lg font-semibold">Rizul Gupta</h3>
+              <span class="mt-1 font-medium">Head of Recruitment</span>
+            </div>
+          </div>
+
+          <div class="w-full max-w-xs text-center">
+            <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="https://www.mitblick.de/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png" alt="avatar"/>
+
+            <div class="mt-2">
+              <h3 class="text-lg font-semibold ">Erlisa Kulla</h3>
+              <span class="mt-1 font-medium">Head of IT</span>
+            </div>
+          </div>
+
+          <div class="w-full max-w-xs text-center">
+            <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="https://www.mitblick.de/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png" alt="avatar"/>
+
+            <div class="mt-2">
+              <h3 class="text-lg font-semibold">Alexia Bare</h3>
+              <span class="mt-1 font-medium">Head of Logistics</span>
+            </div>
+          </div>
+
+          <div class="w-full max-w-xs text-center">
+            <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="https://www.mitblick.de/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png" alt="avatar"/>
+
+            <div class="mt-2">
+              <h3 class="text-lg font-semibold">Rana Ibrahimova</h3>
+              <span class="mt-1 font-medium">Head of Sponsors and Finance</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <h1 id="faq-title">FAQs</h1>
+
+      <div class="grid md:grid-cols-2 gap-4 grid-cols-1">
+        <div class="wrap-collabsible">
+          <input id="q1" class="toggle" type="checkbox">
+          <label for="q1" class="lbl-toggle">Who can attend?</label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+              <p>
+                jacobs<i>Hack</i>! 2021 is open only to students of Jacobs University Bremen and those that have graduated from the university in the past twelve months. 
+                In order to participate, you need to follow the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank" style="text-decoration:underline">MLH Code Of Conduct</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrap-collabsible">
+          <input id="q2" class="toggle" type="checkbox">
+          <label for="q2" class="lbl-toggle">Can I attend even if I don’t know how to code?</label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+              <p>
+                Yes, you can also participate even if you are not a coder. 
+                Participation is not only about coding, e.g. graphic designers can be essential to teams by making the hack look more professional. 
+                Providing ideas for projects also counts as participation. 
+                In addition, there will also be mentors willing to help you to learn to code at the event if you are interested.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrap-collabsible">
+          <input id="q3" class="toggle" type="checkbox">
+          <label for="q3" class="lbl-toggle">How much does attending the hackathon cost?</label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+              <p>
+                Admission is free! 
+                We will provide food, beverages, and swag throughout the event.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrap-collabsible">
+          <input id="q4" class="toggle" type="checkbox">
+          <label for="q4" class="lbl-toggle">What will I eat?</label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+              <p>
+                We’ve got you covered. 
+                We’ll take care of providing meals at the event from breakfast on Saturday to Brunch on Sunday.
+                If you have dietary restrictions, we’ll try our best to accommodate them.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrap-collabsible">
+          <input id="q5" class="toggle" type="checkbox">
+          <label for="q5" class="lbl-toggle">Where will I sleep?</label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+              <p>
+                Hacking all night can get tiring.
+                We’ll have a few bean bags and air mattresses in a quiet room for you to nap at the venue.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="wrap-collabsible">
+          <input id="q6" class="toggle" type="checkbox">
+          <label for="q6" class="lbl-toggle">What should I bring?</label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+              <p>
+                Bring your laptop along with you, and all tech you think you’ll need or use.
+                We’ll take care of the food, beverages, stickers, and much more.
+                Feel free to bring your pillows, toiletries, headphones, etc.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrap-collabsible">
+          <input id="q7" class="toggle" type="checkbox">
+          <label for="q7" class="lbl-toggle">How do teams work?</label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+              <p>
+                You can work in teams of up to 4 people.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrap-collabsible">
+          <input id="q8" class="toggle" type="checkbox">
+          <label for="q8" class="lbl-toggle">What if I don't have a team?</label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+              <p>
+                If you don’t have a team now, don’t worry!
+                We’ll have team formation and ideation events geared towards helping you find people to work with throughout the event.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrap-collabsible">
+          <input id="q9" class="toggle" type="checkbox">
+          <label for="q9" class="lbl-toggle">What is the application process like?</label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+              <p>
+                We are looking for a diverse group of hackers at our hackathon.
+                For this we will ask you a couple of questions in the application.
+                That said, we are looking for anyone who is creative or just simply passionate for technology.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrap-collabsible">
+          <input id="q10" class="toggle" type="checkbox">
+          <label for="q10" class="lbl-toggle">How do I apply?</label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+              <p>
+                Simply head to our registration portal.
+                Convince us why you are amazing and we will hopefully see you in Bremen in November!
+                We’ll accept applicants on a rolling basis.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrap-collabsible">
+          <input id="q11" class="toggle" type="checkbox">
+          <label for="q11" class="lbl-toggle">What about hardware hacks?</label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+              <p>
+                jacobs<i>Hack</i>! is an MLH hackathon.
+                Major League Hacking generously provides us with their hardware lab that includes a variety of hardware including and not limited to Arduino, Myo armband, Muse headband, Leap Motion, Spark Core, pebble, and Oculus.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrap-collabsible">
+          <input id="q12" class="toggle" type="checkbox">
+          <label for="q12" class="lbl-toggle">What about issues of intellectual property?</label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+              <p>
+                Everything you create belongs to you.
+                We don’t claim any rights on your Intellectual property or the intellectual property generated by you during the hackathon or outside the hackathon.
+                However, we reserve the right to use your submissions for promotional purposes of jacobs<i>Hack</i>!, see the Terms and Conditions for details.
+              </p>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h1 id="cont-title">Contact</h1>
+      <div class="bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative" id="map">
+        <iframe width="100%" height="100%" class="absolute inset-0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJmYIQiaEssUcRHSsLUx1ugGg&key=AIzaSyDx-dF-uUJu66_5SK2CPqXzLibIiuqO1Os" style="filter: grayscale(0.3) contrast(0.8) opacity(0.7);"></iframe>
+
+        <div class="bg-white relative flex flex-wrap py-6 px-8 rounded shadow-md">
+          <div class="grid md:grid-cols-2 gap-4 grid-cols-1">
+            <div>
+              <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
+              <p class="-1" style="font-size:16px;">Campus Ring 1<br>28759 Bremen<br>Germany</p>
+            </div>
+            <div>
+              <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
+              <a class="text-indigo-500 leading-relaxed">example@email.com</a>
+              <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
+              <p class="leading-relaxed" style="font-size:16px;">123-123-123</p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- ATLANTIS IMAGE -->
+    <!-- <img src="img/atlantis.png" alt="atlantis" id="atlantis-image"> -->
+
+    <!-- FOOTER -->
+    <section id="footer">
+      <footer class="py-5">
+        <div class="container">
+          <p>
+            <button type="button" onclick="openModal('imprint')" id="ft">Imprint</small></button> -
+            <button type="button" onclick="openModal('terms')"><small  id="ft">Terms & Conditions</small></button> -
+            <button type="button" onclick="openModal('privacy')"><small  id="ft">Privacy Policy</small></button>
+          </p>
+          <br />
+          <p class="m-0 text-center small" id="copyright">Copyright &copy; 2019 jacobs<i>Hack</i>!
+          </p>
+        </div>
+      </footer>
+    </section>
+
+    <!-- IMPRINT MODAL -->
+    <dialog id="imprint" class="bg-transparent z-0 relative w-screen h-screen">
+      <div class="p-7 flex justify-center items-center fixed left-0 top-0 w-full h-full bg-gray-900 bg-opacity-50 z-50 transition-opacity duration-300 opacity-0">
+        <div id="cont" class="bg-white rounded-lg w-1/2 relative" style="height:80vh;">
+          <div class="flex flex-col items-start">
+            <div class="p-7 flex items-center w-full">
+              <div class="text-gray-900 font-bold text-lg">jacobs<i>Hack</i>! Imprint</div>
+              <svg onclick="modalClose('imprint')" class="ml-auto fill-current text-gray-700 w-5 h-5 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+                <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z" />
+              </svg>
+            </div>
+
+            <div class="px-7 overflow-x-hidden overflow-y-auto" id="imprint-content">
+              <iframe src="imprint.html" frameBorder="0" width="100%" height="100%"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- TERMS & CONDITIONS MODAL -->
+    <dialog id="terms" class="bg-transparent z-0 relative w-screen h-screen">
+      <div class="p-7 flex justify-center items-center fixed left-0 top-0 w-full h-full bg-gray-900 bg-opacity-50 z-50 transition-opacity duration-300 opacity-0">
+        <div id="cont" class="bg-white rounded-lg w-1/2 relative" style="height:80vh;">
+          <div class="flex flex-col items-start">
+            <div class="p-7 flex items-center w-full">
+              <div class="text-gray-900 font-bold text-lg">jacobs<i>Hack</i>! Terms & Conditions</div>
+              <svg onclick="modalClose('terms')" class="ml-auto fill-current text-gray-700 w-5 h-5 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+                <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z" />
+              </svg>
+            </div>
+
+            <div class="px-7 overflow-x-hidden overflow-y-auto" id="terms-content">
+              <iframe src="terms.html" frameBorder="0" width="100%" height="100%"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </dialog>
+    
+    <!-- PRIVACY POLICY MODAL -->
+    <dialog id="privacy" class="bg-transparent z-0 relative w-screen h-screen">
+      <div class="p-7 flex justify-center items-center fixed left-0 top-0 w-full h-full bg-gray-900 bg-opacity-50 z-50 transition-opacity duration-300 opacity-0">
+        <div id="cont"class="bg-white rounded-lg w-1/2 relative" style="height:80vh;">
+          <div class="flex flex-col items-start">
+            <div class="p-7 flex items-center w-full">
+              <div class="text-gray-900 font-bold text-lg">jacobs<i>Hack</i>! Privacy Policy</div>
+              <svg onclick="modalClose('privacy')" class="ml-auto fill-current text-gray-700 w-5 h-5 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+                <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z" />
+              </svg>
+            </div>
+
+            <div class="px-7 overflow-x-hidden overflow-y-auto" id="privacy-content">
+              <iframe src="privacy.html" frameBorder="0" width="100%" height="100%"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- JS IMPORT -->
     <script src="src.js"></script>
+
+    <!-- MODAL JS -->
+    <script>
+      function openModal(key) {
+        document.getElementById(key).showModal(); 
+        document.body.setAttribute('style', 'overflow: hidden;'); 
+        document.getElementById(key).children[0].scrollTop = 0; 
+        document.getElementById(key).children[0].classList.remove('opacity-0'); 
+        document.getElementById(key).children[0].classList.add('opacity-100')
+      }
+
+      function modalClose(key) {
+        document.getElementById(key).children[0].classList.remove('opacity-100');
+        document.getElementById(key).children[0].classList.add('opacity-0');
+        setTimeout(function () {
+          document.getElementById(key).close();
+          document.body.removeAttribute('style');
+        }, 100);
+      }
+    </script>
   </body>
+
+  <!-- SCHEDULE TABLE STYLES -->
+  <style>
+    thead {
+      background-color: rgb(65, 105, 225);
+    }
+
+    .table {
+      border-spacing: 0 10px;
+      width: 100%;
+    }
+
+    .table tr {
+      border-radius: 20px;
+      background-color: rgba(65, 105, 225, 50%);
+      transition: 0.3s ease background-color;
+    }
+
+    .table tr:hover {
+      background-color: rgba(65, 105, 225, 70%);
+      transition: 0.3s ease background-color;
+    }
+
+    tr td:nth-child(n+4),
+    tr th:nth-child(n+4) {
+      border-radius: 0 .625rem .625rem 0;
+    }
+
+    tr td:nth-child(1),
+    tr th:nth-child(1) {
+      border-radius: .625rem 0 0 .625rem;
+    }
+  </style>
 </html>

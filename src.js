@@ -1,5 +1,8 @@
+// Code for activating links when scrolling to a section
+
 const sections = document.querySelectorAll("section");
 const navLi = document.querySelectorAll("nav .container ul li");
+
 window.addEventListener("scroll", () => {
   let current = "";
   sections.forEach((section) => {
