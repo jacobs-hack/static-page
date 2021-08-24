@@ -4,10 +4,11 @@
     <title>jacobs<i>Hack</i>! 2021</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon.png"/>
   </head>
 
   <body>
-    <!-- NAVIGATION BAR -->
+    <!--______________________________ NAVIGATION BAR ______________________________-->
     <nav>
       <div class="container">
         <ul>
@@ -25,14 +26,14 @@
       </div>
     </nav>
 
-    <!-- MLH BANNER -->
+    <!--______________________________ MLH BANNER ______________________________-->
     <a id="mlh-trust-badge" style="display:block;max-width:120px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/eu-2021/events?utm_source=eu-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=blue" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-blue.svg" alt="Major League Hacking 2021 Hackathon Season" style="width:100%"></a>
 
-    <!-- INTRO -->
+    <!--______________________________ INTRO ______________________________-->
     <section id="intro">
       <div class="grid md:grid-cols-2 gap-4 grid-cols-1">
         <div>
-          <img src="img/jh-logo.png" alt="logo">
+          <img src="img/jh-logo-wl.png" alt="logo">
         </div>
 
         <div id="intro-txt">
@@ -45,7 +46,7 @@
       </div>
     </section>
 
-    <!-- ABOUT -->
+    <!--______________________________ ABOUT ______________________________-->
     <section id="about">
       <h1 id="about-title">What is jacobs<i>Hack</i>?</h1>
 
@@ -58,105 +59,271 @@
       <img src="img/fish.png" alt="fish" id="fish-image">
     </section>
     
-    <!-- SCHEDULE -->
+    <!--______________________________ SCHEDULE ______________________________-->
     <section id="schedule">
       <h1 id="sched-title">Schedule<h1>
-      <div class="overflow-auto lg:overflow-visible ">
+
+      <h2 class="font-bold" style="color:white; padding:0px 0px 8px; font-size:24px">Saturday</h2>
+      <div class="overflow-auto lg:overflow-visible" id="sched-table">
         <table class="table text-gray-300 border-separate space-y-6 text-md">
           <thead class="text-xl">
             <tr>
               <th class="p-3">Start</th>
               <th class="p-3">End</th>
-              <th class="p-3">Event </th>
-              <th class="p-3">Description</th>
+              <th class="p-3">Event</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td class="p-3">
-                09:00
+                08:00
               </td>
               <td class="p-3">
                 10:00
               </td>
               <td class="p-3 font-bold">
-                Opening Ceremony
+                Registration and SWAG pick up
+              </td>
+            </tr>
+            <tr>
+              <td class="p-3">
+                10:00
               </td>
               <td class="p-3">
-                Text
+                10:30
+              </td>
+              <td class="p-3 font-bold">
+                Opening Ceremony
+              </td>
+            </tr>
+            <tr>
+              <td class="p-3">
+                10:30
+              </td>
+              <td class="p-3">
+                11:00
+              </td>
+              <td class="p-3 font-bold">
+                Workshop - Ice Breaker
+              </td>
+            </tr>
+            <tr>
+              <td class="p-3">
+                11:00
+              </td>
+              <td class="p-3">
+                12:00
+              </td>
+              <td class="p-3 font-bold">
+                Speaker - Tech Talk
+              </td>
+            </tr>
+            <tr>
+              <td class="p-3">
+                12:00
+              </td>
+              <td class="p-3">
+              </td>
+              <td class="p-3 font-bold">
+                Hacking Starts!
+              </td>
+            </tr>
+            <tr>
+              <td class="p-3">
+                14:00
+              </td>
+              <td class="p-3">
+                16:00
+              </td>
+              <td class="p-3 font-bold">
+                Lunch
+              </td>
+            </tr>
+            <tr>
+              <td class="p-3">
+                16:00
+              </td>
+              <td class="p-3">
+                17:00
+              </td>
+              <td class="p-3 font-bold">
+                Workshop + Speaker
+              </td>
+            </tr>
+            <tr>
+              <td class="p-3">
+                19:00
+              </td>
+              <td class="p-3">
+                21:00
+              </td>
+              <td class="p-3 font-bold">
+                Dinner
               </td>
             </tr>
           </tbody>
         </table>
       </div>
+
+      <h2 class="font-bold" style="color:white; padding:20px 0px 8px; font-size:24px">Sunday</h2>
+      <div class="overflow-auto lg:overflow-visible" id="sched-table">
+        <table class="table text-gray-300 border-separate space-y-6 text-md">
+          <thead class="text-xl">
+            <tr>
+              <th class="p-3">Start</th>
+              <th class="p-3">End</th>
+              <th class="p-3">Event</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="p-3">
+                00:00
+              </td>
+              <td class="p-3">
+                02:00
+              </td>
+              <td class="p-3 font-bold">
+                Midnight Snacks + Activities
+              </td>
+            </tr>
+            <tr>
+              <td class="p-3">
+                08:00
+              </td>
+              <td class="p-3">
+                10:00
+              </td>
+              <td class="p-3 font-bold">
+                Breakfast
+              </td>
+            </tr>
+            <tr>
+              <td class="p-3">
+              </td>
+              <td class="p-3">
+                12:00
+              </td>
+              <td class="p-3 font-bold">
+                Hacking Stops!
+              </td>
+            </tr>
+            <tr>
+              <td class="p-3">
+                13:00
+              </td>
+              <td class="p-3">
+                14:00
+              </td>
+              <td class="p-3 font-bold">
+                Workshop + Speaker
+              </td>
+            </tr>
+            <tr>
+              <td class="p-3">
+                14:00
+              </td>
+              <td class="p-3">
+                16:00
+              </td>
+              <td class="p-3 font-bold">
+                Lunch
+              </td>
+            </tr>
+            <tr>
+              <td class="p-3">
+                16:00
+              </td>
+              <td class="p-3">
+                18:00
+              </td>
+              <td class="p-3 font-bold">
+                Closing Ceremony	
+              </td>
+            </tr>
+            <tr>
+              <td class="p-3">
+                18:00
+              </td>
+              <td class="p-3">
+              </td>
+              <td class="p-3 font-bold">
+                jacobsHack! Party
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p style="color:rgba(255, 255, 255, 50%); padding-top:20px;">More activities, workshops and speakers to be announced!</p>
     </section>
 
-    <!-- TEAM -->
+    <!--______________________________ TEAM ______________________________-->
     <section id="team">
       <h1 id="team-title">Organizing Team</h1>
 
       <div class="flex items-center justify-center">
         <div class="grid gap-8 mt-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
           <div class="w-full max-w-xs text-center">
-            <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="https://www.mitblick.de/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png" alt="avatar"/>
+            <a href="https://www.linkedin.com/in/danielatsayem/" rel="noopener noreferrer" target="_blank"><img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="img/team/daniela.jpg" alt="avatar"/></a>
 
             <div class="mt-2">
-              <h3 class="text-lg font-semibold">Daniela Tsayem</h3>
-              <span class="mt-1 font-medium">Main Organizer and Head of Design</span>
+              <h3 class="text-lg font-semibold"  id="name">Daniela Tsayem</h3>
+              <span id="position" class="mt-1 font-medium">Main Organizer and Head of Design</span>
             </div>
           </div>
 
           <div class="w-full max-w-xs text-center">
-            <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="https://www.mitblick.de/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png" alt="avatar"/>
+            <a href="https://www.linkedin.com/in/denisa-checiu-800a21173/" rel="noopener noreferrer" target="_blank"><img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="https://www.mitblick.de/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png" alt="avatar"/></a>
 
             <div class="mt-2">
-              <h3 class="text-lg font-semibold">Denisa Checiu</h3>
-              <span class="mt-1 font-medium">Main Organizer</span>
+              <h3 class="text-lg font-semibold"  id="name">Denisa Checiu</h3>
+              <span id="position" class="mt-1 font-medium">Main Organizer</span>
             </div>
           </div>
 
           <div class="w-full max-w-xs text-center">
-            <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="https://www.mitblick.de/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png" alt="avatar"/>
+            <a href="https://www.linkedin.com/in/guptarizul/" rel="noopener noreferrer" target="_blank"><img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="img/team/rizul.jpg" alt="avatar"/></a>
 
             <div class="mt-2">
-              <h3 class="text-lg font-semibold">Rizul Gupta</h3>
-              <span class="mt-1 font-medium">Head of Recruitment</span>
+              <h3 class="text-lg font-semibold" id="name">Rizul Gupta</h3>
+              <span id="position" class="mt-1 font-medium">Head of Recruitment</span>
             </div>
           </div>
 
           <div class="w-full max-w-xs text-center">
-            <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="https://www.mitblick.de/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png" alt="avatar"/>
+            <a href="https://www.linkedin.com/in/erlisa-kulla/" rel="noopener noreferrer" target="_blank"><img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="img/team/erlisa.jpg" alt="avatar"/></a>
 
             <div class="mt-2">
-              <h3 class="text-lg font-semibold ">Erlisa Kulla</h3>
-              <span class="mt-1 font-medium">Head of IT</span>
+              <h3 class="text-lg font-semibold" id="name">Erlisa Kulla</h3>
+              <span id="position" class="mt-1 font-medium">Head of IT</span>
             </div>
           </div>
 
           <div class="w-full max-w-xs text-center">
-            <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="https://www.mitblick.de/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png" alt="avatar"/>
+            <a href="https://www.linkedin.com/in/alexia-bare-411351206/" rel="noopener noreferrer" target="_blank"><img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="img/team/alexia.jpg" alt="avatar"/></a>
 
             <div class="mt-2">
-              <h3 class="text-lg font-semibold">Alexia Bare</h3>
-              <span class="mt-1 font-medium">Head of Logistics</span>
+              <h3 class="text-lg font-semibold" id="name">Alexia Bare</h3>
+              <span id="position" class="mt-1 font-medium">Head of Logistics</span>
             </div>
           </div>
 
           <div class="w-full max-w-xs text-center">
-            <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="https://www.mitblick.de/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png" alt="avatar"/>
+            <a href="https://www.linkedin.com/in/ranai/" rel="noopener noreferrer" target="_blank"><img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="img/team/rana.jpg" alt="avatar"/></a>
 
             <div class="mt-2">
-              <h3 class="text-lg font-semibold">Rana Ibrahimova</h3>
-              <span class="mt-1 font-medium">Head of Sponsors and Finance</span>
+              <h3 class="text-lg font-semibold" id="name">Rana Ibrahimova</h3>
+              <span id="position" class="mt-1 font-medium">Head of Sponsors and Finance</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FAQ -->
+    <!--______________________________ FAQ ______________________________-->
     <section id="faq">
-      <h1 id="faq-title">FAQs</h1>
+      <h1 id="faq-title">FAQ</h1>
 
       <div class="grid md:grid-cols-2 gap-4 grid-cols-1">
         <div class="wrap-collabsible">
@@ -323,7 +490,7 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
+    <!--______________________________ CONTACT ______________________________-->
     <section id="contact">
       <h1 id="cont-title">Contact</h1>
       <div class="bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative" id="map">
@@ -336,19 +503,20 @@
               <p class="-1" style="font-size:16px;">Campus Ring 1<br>28759 Bremen<br>Germany</p>
             </div>
             <div>
-              <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
-              <a class="text-indigo-500 leading-relaxed">example@email.com</a>
-              <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
-              <p class="leading-relaxed" style="font-size:16px;">123-123-123</p>
+              <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">TEAM EMAIL</h2>
+              <a class="text-indigo-500 leading-relaxed" href="mailto:team@jacobshack.com">team@jacobshack.com</a>
+              <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">ORGANIZERS EMAILS</h2>
+              <p class="leading-relaxed" style="font-size:16px;"><a class="text-indigo-500 leading-relaxed" href="mailto:d.checiu@jacobs-university.de">d.checiu@jacobs-university.de</a><br>
+              <a class="text-indigo-500 leading-relaxed" href="mailto:d.tsayem@jacobs-university.de">d.tsayem@jacobs-university.de</a></p>
             </div>
           </div>
         </div>
     </section>
 
-    <!-- ATLANTIS IMAGE -->
+    <!--______________________________ ATLANTIS IMAGE ______________________________-->
     <!-- <img src="img/atlantis.png" alt="atlantis" id="atlantis-image"> -->
 
-    <!-- FOOTER -->
+    <!--______________________________ FOOTER ______________________________-->
     <section id="footer">
       <footer class="py-5">
         <div class="container">
@@ -358,7 +526,7 @@
             <button type="button" onclick="openModal('privacy')"><small  id="ft">Privacy Policy</small></button>
           </p>
           <br />
-          <p class="m-0 text-center small" id="copyright">Copyright &copy; 2019 jacobs<i>Hack</i>!
+          <p class="m-0 text-center small" id="copyright">Copyright &copy; 2021 jacobs<i>Hack</i>!
           </p>
         </div>
       </footer>
@@ -377,14 +545,14 @@
             </div>
 
             <div class="px-7 overflow-x-hidden overflow-y-auto" id="imprint-content">
-              <iframe src="imprint.html" frameBorder="0" width="100%" height="100%"></iframe>
+              <iframe src="legal/imprint.html" frameBorder="0" width="100%" height="100%"></iframe>
             </div>
           </div>
         </div>
       </div>
     </dialog>
 
-    <!-- TERMS & CONDITIONS MODAL -->
+    <!--______________________________ TERMS & CONDITIONS MODAL ______________________________-->
     <dialog id="terms" class="bg-transparent z-0 relative w-screen h-screen">
       <div class="p-7 flex justify-center items-center fixed left-0 top-0 w-full h-full bg-gray-900 bg-opacity-50 z-50 transition-opacity duration-300 opacity-0">
         <div id="cont" class="bg-white rounded-lg w-1/2 relative" style="height:80vh;">
@@ -397,14 +565,14 @@
             </div>
 
             <div class="px-7 overflow-x-hidden overflow-y-auto" id="terms-content">
-              <iframe src="terms.html" frameBorder="0" width="100%" height="100%"></iframe>
+              <iframe src="legal/terms.html" frameBorder="0" width="100%" height="100%"></iframe>
             </div>
           </div>
         </div>
       </div>
     </dialog>
     
-    <!-- PRIVACY POLICY MODAL -->
+    <!--______________________________ PRIVACY POLICY MODAL ______________________________-->
     <dialog id="privacy" class="bg-transparent z-0 relative w-screen h-screen">
       <div class="p-7 flex justify-center items-center fixed left-0 top-0 w-full h-full bg-gray-900 bg-opacity-50 z-50 transition-opacity duration-300 opacity-0">
         <div id="cont"class="bg-white rounded-lg w-1/2 relative" style="height:80vh;">
@@ -417,17 +585,41 @@
             </div>
 
             <div class="px-7 overflow-x-hidden overflow-y-auto" id="privacy-content">
-              <iframe src="privacy.html" frameBorder="0" width="100%" height="100%"></iframe>
+              <iframe src="legal/privacy.html" frameBorder="0" width="100%" height="100%"></iframe>
             </div>
           </div>
         </div>
       </div>
     </dialog>
 
-    <!-- JS IMPORT -->
-    <script src="src.js"></script>
+    <!--______________________________ BACK TO TOP BUTTON ______________________________-->
+    <button onclick="topFunction()" id="top-btn" title="Go to top">▲</button>
 
-    <!-- MODAL JS -->
+    <!--______________________________ ACTIVE NAV LINK JS ______________________________-->
+    <script>
+      const sections = document.querySelectorAll("section");
+      const navLi = document.querySelectorAll("nav .container ul li");
+
+      window.addEventListener("scroll", () => {
+        let current = "";
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (pageYOffset >= sectionTop - sectionHeight / 3) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        navLi.forEach((li) => {
+          li.classList.remove("active");
+          if (li.classList.contains(current)) {
+            li.classList.add("active");
+          }
+        });
+      });
+    </script>
+
+    <!--______________________________ MODAL JS ______________________________-->
     <script>
       function openModal(key) {
         document.getElementById(key).showModal(); 
@@ -446,9 +638,29 @@
         }, 100);
       }
     </script>
+
+    <!--______________________________ BACK TO TOP BUTTON JS ______________________________-->
+    <script>
+      var mybutton = document.getElementById("top-btn");
+
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
   </body>
 
-  <!-- SCHEDULE TABLE STYLES -->
+  <!--______________________________ SCHEDULE TABLE STYLES ______________________________-->
   <style>
     thead {
       background-color: rgb(65, 105, 225);
@@ -470,8 +682,8 @@
       transition: 0.3s ease background-color;
     }
 
-    tr td:nth-child(n+4),
-    tr th:nth-child(n+4) {
+    tr td:nth-child(n+3),
+    tr th:nth-child(n+3) {
       border-radius: 0 .625rem .625rem 0;
     }
 
