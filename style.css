@@ -91,8 +91,10 @@ nav .container ul li.active a, nav .container ul li a:hover {
   font-weight: bold;
 }
 
-#register {
+#register-1, #register-2 {
   font-size: 22px;
+  opacity: 80%;
+  cursor: not-allowed;
 }
 
 #intro-txt {
@@ -180,7 +182,7 @@ ol li {
 }
 
 #name {
-  color: #00243E;
+  color: rgba(255, 255, 255, 90%);
   padding: 10px 0px 10px;
   font-size: 20px;
 }
