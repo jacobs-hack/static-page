@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/favicon.png"/>
+    <link href="http://fonts.cdnfonts.com/css/atlantis-inline-grunge" rel="stylesheet">
   </head>
 
   <body>
@@ -19,8 +20,8 @@
           <li class="contact"><a href="#contact">Contact</a></li>
           <li class="register">
             <!--<button class="px-3 py-1 tracking-wide text-white transition-colors duration-300 transform bg-blue-600 rounded-xl dark:bg-gray-800 hover:bg-blue-500 dark:hover:bg-gray-700 focus:outline-none focus:bg-blue-500 dark:focus:bg-gray-700" id="register-1">-->
-            <button class="px-3 py-1 tracking-wide text-white transition-colors duration-300 transform bg-blue-600 rounded-xl" id="register-1">
-              Register
+            <button class="tracking-wide text-white bg-blue-600 rounded-xl" id="register-1">
+              <a href="http://jhack2021.herokuapp.com">Register</a>
             </button>
           </li>
         </ul>
@@ -33,509 +34,618 @@
     <!--______________________________ INTRO ______________________________-->
     <section id="intro">
       <div class="grid md:grid-cols-2 gap-4 grid-cols-1">
-        <div>
+        <!--<div>
           <img src="img/jh-logo-wl.png" alt="logo">
-        </div>
+        </div>-->
 
         <div id="intro-txt">
-          <div id="intro-txt-1">jacobs<i>Hack</i>!</div><br>
-          <div id="intro-txt-2">November 21st-22nd, 2021</div><br>
+          <div id="intro-txt-1">jacobsHack!2021</div><br>
+          <div id="intro-txt-2">November 20th-21st</div><br>
           <!--<button id="register-2" class="px-4 py-2 tracking-wide text-white transition-colors duration-300 transform bg-blue-600 rounded-xl dark:bg-gray-800 hover:bg-blue-500 dark:hover:bg-gray-700 focus:outline-none focus:bg-blue-500 dark:focus:bg-gray-700">-->
-          <button id="register-2" class="px-4 py-2 tracking-wide text-white transition-colors duration-300 transform bg-blue-600 rounded-xl dark:bg-gray-800">
-            Register Now!
+          <button id="register-2">
+            <a href="http://jhack2021.herokuapp.com">Register Now!</a>
           </button><br>
-          <p style="font-weight:normal; margin-top:30px; opacity:70%; font-size:18px;"><i>Registrations opening soon!</i></p>
         </div>
       </div>
     </section>
 
-    <!--______________________________ ABOUT ______________________________-->
-    <section id="about">
-      <h1 id="about-title">What is jacobs<i>Hack</i>?</h1>
-
-      <p style="color:rgba(255,255,255,92%);">
-        <b>jacobs<i>Hack</i>! 2021</b>, the 7th edition of jacobs<i>Hack</i>!, is a student-run hackathon where student hackers from Jacobs University Bremen come together to create and collaborate on kick-ass projects over the course of <b>24 hours</b> filled with programming, tech talks, games, and epic Nerf gun battles. Due to the current pandemic situation, this year's event will be available only to the <b>students of JUB</b>.<br><br>
-        This year's theme is: <br>
-        <span id="theme">"The Lost City of Atlantis"</span>
-      </p>
-      
-      <img src="img/fish.png" alt="fish" id="fish-image">
-    </section>
-    
-    <!--______________________________ SCHEDULE ______________________________-->
-    <section id="schedule">
-      <h1 id="sched-title">Schedule<h1>
-
-      <h2 class="font-bold" style="color:white; padding:0px 0px 8px; font-size:24px">Saturday</h2>
-      <div class="overflow-auto lg:overflow-visible" id="sched-table">
-        <table class="table text-gray-300 border-separate space-y-6 text-md">
-          <thead class="text-xl">
-            <tr>
-              <th class="p-3">Start</th>
-              <th class="p-3">End</th>
-              <th class="p-3">Event</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="p-3">
-                08:00
-              </td>
-              <td class="p-3">
-                10:00
-              </td>
-              <td class="p-3 font-bold">
-                Registration and SWAG pick up
-              </td>
-            </tr>
-            <tr>
-              <td class="p-3">
-                10:00
-              </td>
-              <td class="p-3">
-                10:30
-              </td>
-              <td class="p-3 font-bold">
-                Opening Ceremony
-              </td>
-            </tr>
-            <tr>
-              <td class="p-3">
-                10:30
-              </td>
-              <td class="p-3">
-                11:00
-              </td>
-              <td class="p-3 font-bold">
-                Workshop - Ice Breaker
-              </td>
-            </tr>
-            <tr>
-              <td class="p-3">
-                11:00
-              </td>
-              <td class="p-3">
-                12:00
-              </td>
-              <td class="p-3 font-bold">
-                Speaker - Tech Talk
-              </td>
-            </tr>
-            <tr>
-              <td class="p-3">
-                12:00
-              </td>
-              <td class="p-3">
-              </td>
-              <td class="p-3 font-bold">
-                Hacking Starts!
-              </td>
-            </tr>
-            <tr>
-              <td class="p-3">
-                14:00
-              </td>
-              <td class="p-3">
-                16:00
-              </td>
-              <td class="p-3 font-bold">
-                Lunch
-              </td>
-            </tr>
-            <tr>
-              <td class="p-3">
-                16:00
-              </td>
-              <td class="p-3">
-                17:00
-              </td>
-              <td class="p-3 font-bold">
-                Workshop + Speaker
-              </td>
-            </tr>
-            <tr>
-              <td class="p-3">
-                19:00
-              </td>
-              <td class="p-3">
-                21:00
-              </td>
-              <td class="p-3 font-bold">
-                Dinner
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <h2 class="font-bold" style="color:white; padding:20px 0px 8px; font-size:24px">Sunday</h2>
-      <div class="overflow-auto lg:overflow-visible" id="sched-table">
-        <table class="table text-gray-300 border-separate space-y-6 text-md">
-          <thead class="text-xl">
-            <tr>
-              <th class="p-3">Start</th>
-              <th class="p-3">End</th>
-              <th class="p-3">Event</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="p-3">
-                00:00
-              </td>
-              <td class="p-3">
-                02:00
-              </td>
-              <td class="p-3 font-bold">
-                Midnight Snacks + Activities
-              </td>
-            </tr>
-            <tr>
-              <td class="p-3">
-                08:00
-              </td>
-              <td class="p-3">
-                10:00
-              </td>
-              <td class="p-3 font-bold">
-                Breakfast
-              </td>
-            </tr>
-            <tr>
-              <td class="p-3">
-              </td>
-              <td class="p-3">
-                12:00
-              </td>
-              <td class="p-3 font-bold">
-                Hacking Stops!
-              </td>
-            </tr>
-            <tr>
-              <td class="p-3">
-                13:00
-              </td>
-              <td class="p-3">
-                14:00
-              </td>
-              <td class="p-3 font-bold">
-                Workshop + Speaker
-              </td>
-            </tr>
-            <tr>
-              <td class="p-3">
-                14:00
-              </td>
-              <td class="p-3">
-                16:00
-              </td>
-              <td class="p-3 font-bold">
-                Lunch
-              </td>
-            </tr>
-            <tr>
-              <td class="p-3">
-                16:00
-              </td>
-              <td class="p-3">
-                18:00
-              </td>
-              <td class="p-3 font-bold">
-                Closing Ceremony	
-              </td>
-            </tr>
-            <tr>
-              <td class="p-3">
-                18:00
-              </td>
-              <td class="p-3">
-              </td>
-              <td class="p-3 font-bold">
-                jacobsHack! Party
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <p style="color:rgba(255, 255, 255, 50%); padding-top:20px;">More activities, workshops and speakers to be announced!</p>
-    </section>
-
-    <!--______________________________ TEAM ______________________________-->
-    <section id="team">
-      <h1 id="team-title">Organizing Team</h1>
-
-      <div class="flex items-center justify-center">
-        <div class="grid gap-8 mt-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
-          <div class="w-full max-w-xs text-center">
-            <a href="https://www.linkedin.com/in/danielatsayem/" rel="noopener noreferrer" target="_blank"><img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="img/team/daniela.jpg" alt="avatar"/></a>
-
-            <div class="mt-2">
-              <h3 class="text-lg font-semibold"  id="name">Daniela Tsayem</h3>
-              <span id="position" class="mt-1 font-medium">Main Organizer and Head of Design</span>
-            </div>
-          </div>
-
-          <div class="w-full max-w-xs text-center">
-            <a href="https://www.linkedin.com/in/denisa-checiu-800a21173/" rel="noopener noreferrer" target="_blank"><img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="img/team/denisa.jpeg" alt="avatar"/></a>
-
-            <div class="mt-2">
-              <h3 class="text-lg font-semibold"  id="name">Denisa Checiu</h3>
-              <span id="position" class="mt-1 font-medium">Main Organizer</span>
-            </div>
-          </div>
-
-          <div class="w-full max-w-xs text-center">
-            <a href="https://www.linkedin.com/in/guptarizul/" rel="noopener noreferrer" target="_blank"><img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="img/team/rizul.jpg" alt="avatar"/></a>
-
-            <div class="mt-2">
-              <h3 class="text-lg font-semibold" id="name">Rizul Gupta</h3>
-              <span id="position" class="mt-1 font-medium">Head of Recruitment</span>
-            </div>
-          </div>
-
-          <div class="w-full max-w-xs text-center">
-            <a href="https://www.linkedin.com/in/erlisa-kulla/" rel="noopener noreferrer" target="_blank"><img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="img/team/erlisa.jpg" alt="avatar"/></a>
-
-            <div class="mt-2">
-              <h3 class="text-lg font-semibold" id="name">Erlisa Kulla</h3>
-              <span id="position" class="mt-1 font-medium">Head of IT</span>
-            </div>
-          </div>
-
-          <div class="w-full max-w-xs text-center">
-            <a href="https://www.linkedin.com/in/alexia-bare-411351206/" rel="noopener noreferrer" target="_blank"><img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="img/team/alexia.jpg" alt="avatar"/></a>
-
-            <div class="mt-2">
-              <h3 class="text-lg font-semibold" id="name">Alexia Bare</h3>
-              <span id="position" class="mt-1 font-medium">Head of Logistics</span>
-            </div>
-          </div>
-
-          <div class="w-full max-w-xs text-center">
-            <a href="https://www.linkedin.com/in/ranai/" rel="noopener noreferrer" target="_blank"><img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="img/team/rana.jpg" alt="avatar"/></a>
-
-            <div class="mt-2">
-              <h3 class="text-lg font-semibold" id="name">Rana Ibrahimova</h3>
-              <span id="position" class="mt-1 font-medium">Head of Sponsors and Finance</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--______________________________ FAQ ______________________________-->
-    <section id="faq">
-      <h1 id="faq-title">FAQ</h1>
-
-      <div class="grid md:grid-cols-2 gap-4 grid-cols-1">
-        <div class="wrap-collabsible">
-          <input id="q1" class="toggle" type="checkbox">
-          <label for="q1" class="lbl-toggle">Who can attend?</label>
-          <div class="collapsible-content">
-            <div class="content-inner">
-              <p>
-                jacobs<i>Hack</i>! 2021 is open only to students of Jacobs University Bremen and those that have graduated from the university in the past twelve months. 
-                In order to participate, you need to follow the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank" style="text-decoration:underline">MLH Code Of Conduct</a>.
-              </p>
-            </div>
-          </div>
+    <div class="gradient">
+      <!--______________________________ ABOUT ______________________________-->
+      <section id="about">
+        <div class="titles">
+          <img src="img/symbol.png" alt="symbol" class="atlantis-symbol" style="display:inline; max-width:45px; margin-right:50px;">
+          <h1 id="about-title" style="display:inline;">What is jacobsHack?</h1>
+          <img src="img/symbol.png" alt="symbol" class="atlantis-symbol" style="display:inline;max-width:45px; margin-left:50px;">
         </div>
 
-        <div class="wrap-collabsible">
-          <input id="q2" class="toggle" type="checkbox">
-          <label for="q2" class="lbl-toggle">Can I attend even if I don’t know how to code?</label>
-          <div class="collapsible-content">
-            <div class="content-inner">
-              <p>
-                Yes, you can also participate even if you are not a coder. 
-                Participation is not only about coding, e.g. graphic designers can be essential to teams by making the hack look more professional. 
-                Providing ideas for projects also counts as participation. 
-                In addition, there will also be mentors willing to help you to learn to code at the event if you are interested.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="wrap-collabsible">
-          <input id="q3" class="toggle" type="checkbox">
-          <label for="q3" class="lbl-toggle">How much does attending the hackathon cost?</label>
-          <div class="collapsible-content">
-            <div class="content-inner">
-              <p>
-                Admission is free! 
-                We will provide food, beverages, and swag throughout the event.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="wrap-collabsible">
-          <input id="q4" class="toggle" type="checkbox">
-          <label for="q4" class="lbl-toggle">What will I eat?</label>
-          <div class="collapsible-content">
-            <div class="content-inner">
-              <p>
-                We’ve got you covered. 
-                We’ll take care of providing meals at the event from breakfast on Saturday to Brunch on Sunday.
-                If you have dietary restrictions, we’ll try our best to accommodate them.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="wrap-collabsible">
-          <input id="q5" class="toggle" type="checkbox">
-          <label for="q5" class="lbl-toggle">Where will I sleep?</label>
-          <div class="collapsible-content">
-            <div class="content-inner">
-              <p>
-                Hacking all night can get tiring.
-                We’ll have a few bean bags and air mattresses in a quiet room for you to nap at the venue.
-              </p>
-            </div>
-          </div>
-        </div>
+        <p style="color:rgba(255,255,255,92%);">
+          <b>jacobs<i>Hack</i>! 2021</b>, the 7th edition of jacobs<i>Hack</i>!, is a student-run hackathon where student hackers from Jacobs University Bremen come together to create and collaborate on kick-ass projects over the course of <b>24 hours</b> filled with programming, tech talks, games, and epic Nerf gun battles. Due to the current pandemic situation, this year's event will be available only to the <b>students of JUB</b>.<br><br>
+          This year's theme is: <br>
+          <span id="theme">"The Lost City of Atlantis"</span>
+        </p>
         
-        <div class="wrap-collabsible">
-          <input id="q6" class="toggle" type="checkbox">
-          <label for="q6" class="lbl-toggle">What should I bring?</label>
-          <div class="collapsible-content">
-            <div class="content-inner">
-              <p>
-                Bring your laptop along with you, and all tech you think you’ll need or use.
-                We’ll take care of the food, beverages, stickers, and much more.
-                Feel free to bring your pillows, toiletries, headphones, etc.
-              </p>
+        <img src="img/fish.png" alt="fish" id="fish-image">
+      </section>
+      
+      <!--______________________________ SCHEDULE ______________________________-->
+      <section id="schedule">
+        <div class="titles">
+          <img src="img/symbol.png" alt="symbol" class="atlantis-symbol" style="display:inline; max-width:45px; margin-right:50px;">
+          <h1 style="display:inline;" id="sched-title">Schedule</h1>
+          <img src="img/symbol.png" alt="symbol" class="atlantis-symbol" style="display:inline;max-width:45px; margin-left:50px;">
+        </div>
+
+        <h2 class="font-bold" style="color:white; padding:0px 0px 8px; font-size:24px">Saturday</h2>
+        <div class="overflow-auto lg:overflow-visible" id="sched-table">
+          <table class="table text-gray-300 border-separate space-y-6 text-md">
+            <thead class="text-xl">
+              <tr>
+                <th class="p-3">Start</th>
+                <th class="p-3">End</th>
+                <th class="p-3">Event</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-3">
+                  08:00
+                </td>
+                <td class="p-3">
+                  10:00
+                </td>
+                <td class="p-3 font-bold">
+                  Registration and SWAG pick up
+                </td>
+              </tr>
+              <tr>
+                <td class="p-3">
+                  10:00
+                </td>
+                <td class="p-3">
+                  10:30
+                </td>
+                <td class="p-3 font-bold">
+                  Opening Ceremony
+                </td>
+              </tr>
+              <tr>
+                <td class="p-3">
+                  10:30
+                </td>
+                <td class="p-3">
+                  11:00
+                </td>
+                <td class="p-3 font-bold">
+                  Workshop - Ice Breaker
+                </td>
+              </tr>
+              <tr>
+                <td class="p-3">
+                  11:00
+                </td>
+                <td class="p-3">
+                  12:00
+                </td>
+                <td class="p-3 font-bold">
+                  Speaker - Tech Talk
+                </td>
+              </tr>
+              <tr>
+                <td class="p-3">
+                  12:00
+                </td>
+                <td class="p-3">
+                </td>
+                <td class="p-3 font-bold">
+                  Hacking Starts!
+                </td>
+              </tr>
+              <tr>
+                <td class="p-3">
+                  14:00
+                </td>
+                <td class="p-3">
+                  16:00
+                </td>
+                <td class="p-3 font-bold">
+                  Lunch
+                </td>
+              </tr>
+              <tr>
+                <td class="p-3">
+                  16:00
+                </td>
+                <td class="p-3">
+                  17:00
+                </td>
+                <td class="p-3 font-bold">
+                  Workshop + Speaker
+                </td>
+              </tr>
+              <tr>
+                <td class="p-3">
+                  19:00
+                </td>
+                <td class="p-3">
+                  21:00
+                </td>
+                <td class="p-3 font-bold">
+                  Dinner
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 class="font-bold" style="color:white; padding:20px 0px 8px; font-size:24px">Sunday</h2>
+        <div class="overflow-auto lg:overflow-visible" id="sched-table">
+          <table class="table text-gray-300 border-separate space-y-6 text-md">
+            <thead class="text-xl">
+              <tr>
+                <th class="p-3">Start</th>
+                <th class="p-3">End</th>
+                <th class="p-3">Event</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-3">
+                  00:00
+                </td>
+                <td class="p-3">
+                  02:00
+                </td>
+                <td class="p-3 font-bold">
+                  Midnight Snacks + Activities
+                </td>
+              </tr>
+              <tr>
+                <td class="p-3">
+                  08:00
+                </td>
+                <td class="p-3">
+                  10:00
+                </td>
+                <td class="p-3 font-bold">
+                  Breakfast
+                </td>
+              </tr>
+              <tr>
+                <td class="p-3">
+                </td>
+                <td class="p-3">
+                  12:00
+                </td>
+                <td class="p-3 font-bold">
+                  Hacking Stops!
+                </td>
+              </tr>
+              <tr>
+                <td class="p-3">
+                  13:00
+                </td>
+                <td class="p-3">
+                  14:00
+                </td>
+                <td class="p-3 font-bold">
+                  Workshop + Speaker
+                </td>
+              </tr>
+              <tr>
+                <td class="p-3">
+                  14:00
+                </td>
+                <td class="p-3">
+                  16:00
+                </td>
+                <td class="p-3 font-bold">
+                  Lunch
+                </td>
+              </tr>
+              <tr>
+                <td class="p-3">
+                  16:00
+                </td>
+                <td class="p-3">
+                  18:00
+                </td>
+                <td class="p-3 font-bold">
+                  Closing Ceremony	
+                </td>
+              </tr>
+              <tr>
+                <td class="p-3">
+                  18:00
+                </td>
+                <td class="p-3">
+                </td>
+                <td class="p-3 font-bold">
+                  jacobsHack! Party
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p style="color:rgba(255, 255, 255, 50%); padding-top:20px;">More activities, workshops and speakers to be announced!</p>
+      </section>
+
+      <!--______________________________ TEAM ______________________________-->
+      <section id="team">
+        <div class="titles">
+          <img src="img/symbol.png" alt="symbol" class="atlantis-symbol" style="display:inline; max-width:45px; margin-right:50px;">
+          <h1 style="display:inline;" id="team-title">Organizing Team</h1>
+          <img src="img/symbol.png" alt="symbol" class="atlantis-symbol" style="display:inline;max-width:45px; margin-left:50px;">
+        </div>
+
+        <div class="flex items-center justify-center">
+          <div class="grid gap-8 mt-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+            <div class="w-full max-w-xs text-center">
+              <a href="https://www.linkedin.com/in/danielatsayem/" rel="noopener noreferrer" target="_blank"><img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="img/team/daniela.jpeg" alt="avatar"/></a>
+
+              <div class="mt-2">
+                <h3 class="text-lg font-semibold"  id="name">Daniela Tsayem</h3>
+                <span id="position" class="mt-1 font-medium">Main Organizer and Head of Design</span>
+              </div>
+            </div>
+
+            <div class="w-full max-w-xs text-center">
+              <a href="https://www.linkedin.com/in/denisa-checiu-800a21173/" rel="noopener noreferrer" target="_blank"><img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="img/team/denisa.jpeg" alt="avatar"/></a>
+
+              <div class="mt-2">
+                <h3 class="text-lg font-semibold"  id="name">Denisa Checiu</h3>
+                <span id="position" class="mt-1 font-medium">Main Organizer</span>
+              </div>
+            </div>
+
+            <div class="w-full max-w-xs text-center">
+              <a href="https://www.linkedin.com/in/guptarizul/" rel="noopener noreferrer" target="_blank"><img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="img/team/rizul.jpg" alt="avatar"/></a>
+
+              <div class="mt-2">
+                <h3 class="text-lg font-semibold" id="name">Rizul Gupta</h3>
+                <span id="position" class="mt-1 font-medium">Head of Recruitment</span>
+              </div>
+            </div>
+
+            <div class="w-full max-w-xs text-center">
+              <a href="https://www.linkedin.com/in/erlisa-kulla/" rel="noopener noreferrer" target="_blank"><img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="img/team/erlisa.jpeg" alt="avatar"/></a>
+
+              <div class="mt-2">
+                <h3 class="text-lg font-semibold" id="name">Erlisa Kulla</h3>
+                <span id="position" class="mt-1 font-medium">Head of IT</span>
+              </div>
+            </div>
+
+            <div class="w-full max-w-xs text-center">
+              <a href="https://www.linkedin.com/in/alexia-bare-411351206/" rel="noopener noreferrer" target="_blank"><img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="img/team/alexia.jpg" alt="avatar"/></a>
+
+              <div class="mt-2">
+                <h3 class="text-lg font-semibold" id="name">Alexia Bare</h3>
+                <span id="position" class="mt-1 font-medium">Head of Logistics</span>
+              </div>
+            </div>
+
+            <div class="w-full max-w-xs text-center">
+              <a href="https://www.linkedin.com/in/ranai/" rel="noopener noreferrer" target="_blank"><img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="img/team/rana.jpeg" alt="avatar"/></a>
+
+              <div class="mt-2">
+                <h3 class="text-lg font-semibold" id="name">Rana Ibrahimova</h3>
+                <span id="position" class="mt-1 font-medium">Head of Sponsors and Finance</span>
+              </div>
+            </div>
+
+            <div class="w-full max-w-xs text-center">
+              <!--<a href="#" rel="noopener noreferrer" target="_blank"></a>-->
+              <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="img/team/dongwook.jpeg" alt="avatar"/>
+
+              <div class="mt-2">
+                <h3 class="text-lg font-semibold" id="name">Lee Dongwook</h3>
+                <span id="position" class="mt-1 font-medium">Design Team</span>
+              </div>
+            </div>
+
+            <div class="w-full max-w-xs text-center">
+              <!--<a href="#" rel="noopener noreferrer" target="_blank"></a>-->
+              <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="img/team/gabriela.jpeg" alt="avatar"/>
+
+              <div class="mt-2">
+                <h3 class="text-lg font-semibold" id="name">Gabriela Ramos</h3>
+                <span id="position" class="mt-1 font-medium">Recruitment Team</span>
+              </div>
+            </div>
+
+            <div class="w-full max-w-xs text-center">
+              <!--<a href="#" rel="noopener noreferrer" target="_blank"></a>-->
+              <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="img/team/ilias.jpeg" alt="avatar"/>
+
+              <div class="mt-2">
+                <h3 class="text-lg font-semibold" id="name">Ilias Benhmidane</h3>
+                <span id="position" class="mt-1 font-medium">Sponsors and Finance Team</span>
+              </div>
+            </div>
+
+            <div class="w-full max-w-xs text-center">
+              <!--<a href="#" rel="noopener noreferrer" target="_blank"></a>-->
+              <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="img/team/margaret.jpeg" alt="avatar"/>
+
+              <div class="mt-2">
+                <h3 class="text-lg font-semibold" id="name">Margaret Arukwe</h3>
+                <span id="position" class="mt-1 font-medium">IT Team</span>
+              </div>
+            </div>
+
+            <div class="w-full max-w-xs text-center">
+              <!--<a href="#" rel="noopener noreferrer" target="_blank"></a>-->
+              <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="img/team/muratidzwa.jpeg" alt="avatar"/>
+
+              <div class="mt-2">
+                <h3 class="text-lg font-semibold" id="name">Muratidzwa Mandaza</h3>
+                <span id="position" class="mt-1 font-medium">Design Team</span>
+              </div>
+            </div>
+
+            <div class="w-full max-w-xs text-center">
+              <!--<a href="#" rel="noopener noreferrer" target="_blank"></a>-->
+              <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="img/team/sakar.jpeg" alt="avatar"/>
+
+              <div class="mt-2">
+                <h3 class="text-lg font-semibold" id="name">Sakar Gopal</h3>
+                <span id="position" class="mt-1 font-medium">Sponsors and Finance Team</span>
+              </div>
+            </div>
+
+            <div class="w-full max-w-xs text-center">
+            </div>
+            <div class="w-full max-w-xs text-center">
+            </div>
+
+            <div class="w-full max-w-xs text-center">
+              <!--<a href="#" rel="noopener noreferrer" target="_blank"></a>-->
+              <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="img/team/seema.jpeg" alt="avatar"/>
+
+              <div class="mt-2">
+                <h3 class="text-lg font-semibold" id="name">Seema Rabata</h3>
+                <span id="position" class="mt-1 font-medium">Recruitment Team</span>
+              </div>
+            </div>
+
+            <div class="w-full max-w-xs text-center">
+              <!--<a href="#" rel="noopener noreferrer" target="_blank"></a>-->
+              <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="img/team/wail.jpeg" alt="avatar"/>
+
+              <div class="mt-2">
+                <h3 class="text-lg font-semibold" id="name">Wail Bougida</h3>
+                <span id="position" class="mt-1 font-medium">Recruitment Team</span>
+              </div>
+            </div>
+
+            <div class="w-full max-w-xs text-center">
+            </div>
+            <div class="w-full max-w-xs text-center">
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="wrap-collabsible">
-          <input id="q7" class="toggle" type="checkbox">
-          <label for="q7" class="lbl-toggle">How do teams work?</label>
-          <div class="collapsible-content">
-            <div class="content-inner">
-              <p>
-                You can work in teams of up to 4 people.
-              </p>
-            </div>
-          </div>
+      <!--______________________________ FAQ ______________________________-->
+      <section id="faq">
+        <div class="titles">
+          <img src="img/symbol.png" alt="symbol" class="atlantis-symbol" style="display:inline; max-width:45px; margin-right:50px;">
+          <h1 style="display:inline;" id="faq-title">FAQ</h1>
+          <img src="img/symbol.png" alt="symbol" class="atlantis-symbol" style="display:inline;max-width:45px; margin-left:50px;">
         </div>
 
-        <div class="wrap-collabsible">
-          <input id="q8" class="toggle" type="checkbox">
-          <label for="q8" class="lbl-toggle">What if I don't have a team?</label>
-          <div class="collapsible-content">
-            <div class="content-inner">
-              <p>
-                If you don’t have a team now, don’t worry!
-                We’ll have team formation and ideation events geared towards helping you find people to work with throughout the event.
-              </p>
+        <div class="grid md:grid-cols-2 gap-4 grid-cols-1">
+          <div class="wrap-collabsible">
+            <input id="q1" class="toggle" type="checkbox">
+            <label for="q1" class="lbl-toggle">Who can attend?</label>
+            <div class="collapsible-content">
+              <div class="content-inner">
+                <p>
+                  jacobs<i>Hack</i>! 2021 is open only to students of Jacobs University Bremen and those that have graduated from the university in the past twelve months. 
+                  In order to participate, you need to follow the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank" style="text-decoration:underline">MLH Code Of Conduct</a>.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="wrap-collabsible">
-          <input id="q9" class="toggle" type="checkbox">
-          <label for="q9" class="lbl-toggle">What is the application process like?</label>
-          <div class="collapsible-content">
-            <div class="content-inner">
-              <p>
-                We are looking for a diverse group of hackers at our hackathon.
-                For this we will ask you a couple of questions in the application.
-                That said, we are looking for anyone who is creative or just simply passionate for technology.
-              </p>
+          <div class="wrap-collabsible">
+            <input id="q2" class="toggle" type="checkbox">
+            <label for="q2" class="lbl-toggle">Can I attend even if I don’t know how to code?</label>
+            <div class="collapsible-content">
+              <div class="content-inner">
+                <p>
+                  Yes, you can also participate even if you are not a coder. 
+                  Participation is not only about coding, e.g. graphic designers can be essential to teams by making the hack look more professional. 
+                  Providing ideas for projects also counts as participation. 
+                  In addition, there will also be mentors willing to help you to learn to code at the event if you are interested.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="wrap-collabsible">
-          <input id="q10" class="toggle" type="checkbox">
-          <label for="q10" class="lbl-toggle">How do I apply?</label>
-          <div class="collapsible-content">
-            <div class="content-inner">
-              <p>
-                Simply head to our registration portal.
-                Convince us why you are amazing and we will hopefully see you in Bremen in November!
-                We’ll accept applicants on a rolling basis.
-              </p>
+          <div class="wrap-collabsible">
+            <input id="q3" class="toggle" type="checkbox">
+            <label for="q3" class="lbl-toggle">How much does attending the hackathon cost?</label>
+            <div class="collapsible-content">
+              <div class="content-inner">
+                <p>
+                  Admission is free! 
+                  We will provide food, beverages, and swag throughout the event.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="wrap-collabsible">
-          <input id="q11" class="toggle" type="checkbox">
-          <label for="q11" class="lbl-toggle">What about hardware hacks?</label>
-          <div class="collapsible-content">
-            <div class="content-inner">
-              <p>
-                jacobs<i>Hack</i>! is an MLH hackathon.
-                Major League Hacking generously provides us with their hardware lab that includes a variety of hardware including and not limited to Arduino, Myo armband, Muse headband, Leap Motion, Spark Core, pebble, and Oculus.
-              </p>
+          <div class="wrap-collabsible">
+            <input id="q4" class="toggle" type="checkbox">
+            <label for="q4" class="lbl-toggle">What will I eat?</label>
+            <div class="collapsible-content">
+              <div class="content-inner">
+                <p>
+                  We’ve got you covered. 
+                  We’ll take care of providing meals at the event from breakfast on Saturday to Brunch on Sunday.
+                  If you have dietary restrictions, we’ll try our best to accommodate them.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="wrap-collabsible">
-          <input id="q12" class="toggle" type="checkbox">
-          <label for="q12" class="lbl-toggle">What about issues of intellectual property?</label>
-          <div class="collapsible-content">
-            <div class="content-inner">
-              <p>
-                Everything you create belongs to you.
-                We don’t claim any rights on your Intellectual property or the intellectual property generated by you during the hackathon or outside the hackathon.
-                However, we reserve the right to use your submissions for promotional purposes of jacobs<i>Hack</i>!, see the Terms and Conditions for details.
-              </p>
+          <div class="wrap-collabsible">
+            <input id="q5" class="toggle" type="checkbox">
+            <label for="q5" class="lbl-toggle">Where will I sleep?</label>
+            <div class="collapsible-content">
+              <div class="content-inner">
+                <p>
+                  Hacking all night can get tiring.
+                  We’ll have a few bean bags and air mattresses in a quiet room for you to nap at the venue.
+                </p>
+              </div>
             </div>
           </div>
-        </div> 
-      </div>
-    </section>
-
-    <!--______________________________ CONTACT ______________________________-->
-    <section id="contact">
-      <h1 id="cont-title">Contact</h1>
-      <div class="bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative" id="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2391.7608495565973!2d8.648459015831735!3d53.16833017994205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b12ca189108299%3A0x68806e1d530b2b1d!2sJacobs%20University%20IRC%2C%20Campus%20Ring%201%2C%2028759%20Bremen!5e0!3m2!1sen!2sde!4v1630875721734!5m2!1sen!2sde" width="100%" height="100%" class="absolute inset-0" title="map" marginheight="0" marginwidth="0" scrolling="no"  style="filter: grayscale(0.3) contrast(0.8) opacity(0.7);"></iframe>
-
-        <div class="bg-white relative flex flex-wrap py-6 px-8 rounded shadow-md">
-          <div class="grid md:grid-cols-2 gap-4 grid-cols-1">
-            <div>
-              <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
-              <p class="-1" style="font-size:16px;">Campus Ring 1<br>28759 Bremen<br>Germany</p>
-            </div>
-            <div>
-              <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">TEAM EMAIL</h2>
-              <a class="text-indigo-500 leading-relaxed" href="mailto:team@jacobshack.com">team@jacobshack.com</a>
-              <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">ORGANIZERS EMAILS</h2>
-              <p class="leading-relaxed" style="font-size:16px;"><a class="text-indigo-500 leading-relaxed" href="mailto:d.checiu@jacobs-university.de">d.checiu@jacobs-university.de</a><br>
-              <a class="text-indigo-500 leading-relaxed" href="mailto:d.tsayem@jacobs-university.de">d.tsayem@jacobs-university.de</a></p>
+          
+          <div class="wrap-collabsible">
+            <input id="q6" class="toggle" type="checkbox">
+            <label for="q6" class="lbl-toggle">What should I bring?</label>
+            <div class="collapsible-content">
+              <div class="content-inner">
+                <p>
+                  Bring your laptop along with you, and all tech you think you’ll need or use.
+                  We’ll take care of the food, beverages, stickers, and much more.
+                  Feel free to bring your pillows, toiletries, headphones, etc.
+                </p>
+              </div>
             </div>
           </div>
+
+          <div class="wrap-collabsible">
+            <input id="q7" class="toggle" type="checkbox">
+            <label for="q7" class="lbl-toggle">How do teams work?</label>
+            <div class="collapsible-content">
+              <div class="content-inner">
+                <p>
+                  You can work in teams of up to 4 people.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="wrap-collabsible">
+            <input id="q8" class="toggle" type="checkbox">
+            <label for="q8" class="lbl-toggle">What if I don't have a team?</label>
+            <div class="collapsible-content">
+              <div class="content-inner">
+                <p>
+                  If you don’t have a team now, don’t worry!
+                  We’ll have team formation and ideation events geared towards helping you find people to work with throughout the event.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="wrap-collabsible">
+            <input id="q9" class="toggle" type="checkbox">
+            <label for="q9" class="lbl-toggle">What is the application process like?</label>
+            <div class="collapsible-content">
+              <div class="content-inner">
+                <p>
+                  We are looking for a diverse group of hackers at our hackathon.
+                  For this we will ask you a couple of questions in the application.
+                  That said, we are looking for anyone who is creative or just simply passionate for technology.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="wrap-collabsible">
+            <input id="q10" class="toggle" type="checkbox">
+            <label for="q10" class="lbl-toggle">How do I apply?</label>
+            <div class="collapsible-content">
+              <div class="content-inner">
+                <p>
+                  Simply head to our registration portal.
+                  Convince us why you are amazing and we will hopefully see you in Bremen in November!
+                  We’ll accept applicants on a rolling basis.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="wrap-collabsible">
+            <input id="q11" class="toggle" type="checkbox">
+            <label for="q11" class="lbl-toggle">What about hardware hacks?</label>
+            <div class="collapsible-content">
+              <div class="content-inner">
+                <p>
+                  jacobs<i>Hack</i>! is an MLH hackathon.
+                  Major League Hacking generously provides us with their hardware lab that includes a variety of hardware including and not limited to Arduino, Myo armband, Muse headband, Leap Motion, Spark Core, pebble, and Oculus.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="wrap-collabsible">
+            <input id="q12" class="toggle" type="checkbox">
+            <label for="q12" class="lbl-toggle">What about issues of intellectual property?</label>
+            <div class="collapsible-content">
+              <div class="content-inner">
+                <p>
+                  Everything you create belongs to you.
+                  We don’t claim any rights on your Intellectual property or the intellectual property generated by you during the hackathon or outside the hackathon.
+                  However, we reserve the right to use your submissions for promotional purposes of jacobs<i>Hack</i>!, see the Terms and Conditions for details.
+                </p>
+              </div>
+            </div>
+          </div> 
         </div>
-    </section>
+      </section>
 
-    <!--______________________________ ATLANTIS IMAGE ______________________________-->
-    <!-- <img src="img/atlantis.png" alt="atlantis" id="atlantis-image"> -->
-
-    <!--______________________________ FOOTER ______________________________-->
-    <section id="footer">
-      <footer class="py-5">
-        <div class="container">
-          <p>
-            <button type="button" onclick="openModal('imprint')" id="ft">Imprint</small></button> -
-            <button type="button" onclick="openModal('terms')"><small  id="ft">Terms & Conditions</small></button> -
-            <button type="button" onclick="openModal('privacy')"><small  id="ft">Privacy Policy</small></button>
-          </p>
-          <br />
-          <p class="m-0 text-center small" id="copyright">Copyright &copy; 2021 jacobs<i>Hack</i>!
-          </p>
+      <!--______________________________ CONTACT ______________________________-->
+      <section id="contact">
+        <div class="titles">
+          <img src="img/symbol.png" alt="symbol" class="atlantis-symbol" style="display:inline; max-width:45px; margin-right:50px;">
+          <h1 style="display:inline;"  id="cont-title">Contact</h1>
+          <img src="img/symbol.png" alt="symbol" class="atlantis-symbol" style="display:inline;max-width:45px; margin-left:50px;">
         </div>
-      </footer>
-    </section>
 
-    <!-- IMPRINT MODAL -->
+        <div class="bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative" id="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2391.7608495565973!2d8.648459015831735!3d53.16833017994205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b12ca189108299%3A0x68806e1d530b2b1d!2sJacobs%20University%20IRC%2C%20Campus%20Ring%201%2C%2028759%20Bremen!5e0!3m2!1sen!2sde!4v1630875721734!5m2!1sen!2sde" width="100%" height="100%" class="absolute inset-0" title="map" marginheight="0" marginwidth="0" scrolling="no"  style="filter: grayscale(0.3) contrast(0.8) opacity(0.7);"></iframe>
+
+          <div class="bg-white relative flex flex-wrap py-6 px-8 rounded shadow-md">
+            <div class="grid md:grid-cols-2 gap-4 grid-cols-1">
+              <div>
+                <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
+                <p class="-1" style="font-size:16px;">Campus Ring 1<br>28759 Bremen<br>Germany</p>
+              </div>
+              <div>
+                <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">TEAM EMAIL</h2>
+                <a class="text-indigo-500 leading-relaxed" href="mailto:team@jacobshack.com">team@jacobshack.com</a>
+                <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">ORGANIZERS EMAILS</h2>
+                <p class="leading-relaxed" style="font-size:16px;"><a class="text-indigo-500 leading-relaxed" href="mailto:d.checiu@jacobs-university.de">d.checiu@jacobs-university.de</a><br>
+                <a class="text-indigo-500 leading-relaxed" href="mailto:d.tsayem@jacobs-university.de">d.tsayem@jacobs-university.de</a></p>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <!--______________________________ FOOTER ______________________________-->
+      <section id="footer">
+        <footer class="py-5">
+          <div class="container">
+            <p>
+              <button type="button" onclick="openModal('imprint')" id="ft">Imprint</small></button> -
+              <button type="button" onclick="openModal('terms')"><small  id="ft">Terms & Conditions</small></button> -
+              <button type="button" onclick="openModal('privacy')"><small  id="ft">Privacy Policy</small></button>
+            </p>
+            <br />
+            <p class="m-0 text-center small" id="copyright">Copyright &copy; 2021 jacobs<i>Hack</i>!
+            </p>
+          </div>
+        </footer>
+      </section>
+    </div>
+
+    <!--______________________________ IMPRINT MODAL ______________________________-->
     <dialog id="imprint" class="bg-transparent z-0 relative w-screen h-screen">
       <div class="p-7 flex justify-center items-center fixed left-0 top-0 w-full h-full bg-gray-900 bg-opacity-50 z-50 transition-opacity duration-300 opacity-0">
         <div id="cont" class="bg-white rounded-lg w-1/2 relative" style="height:80vh;">
@@ -676,7 +786,7 @@
 
     .table tr {
       border-radius: 20px;
-      background-color: rgba(65, 105, 225, 50%);
+      background-color: rgba(65, 105, 225, 30%);
       transition: 0.3s ease background-color;
     }
 
