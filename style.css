@@ -59,7 +59,7 @@ nav {
   position: sticky;
   top: 0;
   background-color: #030c35;
-  z-index: 100;
+  z-index: 1;
 }
 
 nav .container {
@@ -116,6 +116,7 @@ nav .container ul li.active a, nav .container ul li a:not(nav .container ul li b
   background-color: #3c89b3;
   border-radius: 500px;
   transition: background-color ease-in-out 0.3s;
+  z-index: 1;
 }
 
 #register-2 {
@@ -216,7 +217,7 @@ ol li {
   position: fixed;
   bottom: 20px;
   right: 30px;
-  z-index: 99;
+  /* z-index: 1; */
   font-size: 18px;
   border: none;
   outline: none;
@@ -236,6 +237,10 @@ ol li {
 #sched-table table {
   width: 80%;
   margin: 0 auto;
+}
+
+.wrap-collapsible {
+  z-index: 1;
 }
 
 /* FAQ styles */
