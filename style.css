@@ -313,6 +313,10 @@ input[type='checkbox'] {
   font-family: 'Atlantis Inline Grunge';
 }
 
+#imprint, #terms, #privacy {
+  display: none;
+}
+
 /* Responsive styles */
 @media only screen and (max-width: 900px) {
   nav {
