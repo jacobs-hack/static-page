@@ -48,7 +48,7 @@ section {
   z-index: 1;
 }
 
-#about, #team, #schedule, #faq, #contact {
+#about, #team, #schedule, #faq, #contact, #sponsors {
   padding: 100px 10%;
   z-index: 1;
 }
@@ -316,8 +316,14 @@ input[type='checkbox'] {
 }
 
 #imprint, #terms, #privacy {
-  z-index: -10;
+  z-index: -1;
   display: none;
+}
+
+.sponsors-list img{
+  display: inline;
+  margin: 20px 30px;
+  max-height: 100px;
 }
 
 /* Responsive styles */
