@@ -49,7 +49,7 @@ section {
 }
 
 #about, #team, #schedule, #faq, #contact, #sponsors, #speakers {
-  padding: 100px 10%;
+  padding: 100px 10% !important;
   z-index: 1;
 }
 
