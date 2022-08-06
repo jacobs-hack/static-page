@@ -7,7 +7,8 @@ html{
 }
 
 section{
-    height: 100%;
+    max-height: 100%;
+    height: 100vh;
     width: 100%;
     justify-content: center;
     text-align: center !important;
@@ -44,7 +45,7 @@ section{
     width: 311.24px;
     height: 376.39px;
     left: 978px;
-    top: 248px;
+    top: 270px;
 }
 
 .upper-right{
@@ -86,3 +87,90 @@ img {
     
     color: #14DFAE;
 }
+
+#about, #team, #schedule, #faq, #contact, #sponsors, #speakers {
+    padding: 100px 10% !important;
+    z-index: 1;
+}
+
+#about-title{
+    color: white;
+    font-size: 52px;
+    font-family: 'Untitled';
+    font-style: normal;
+}
+
+.description{
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: justify;
+    
+    color: #FFFFFF;
+}
+
+.sponsor-img{
+    width: 349px;
+    height: 179px;
+}
+
+.sponsor-u-left{
+    position: relative;
+    left: 60%;
+}
+
+.sponsor-u-right{
+    position: relative;
+    left: 700px;
+    bottom: 164.3px;
+}
+
+.sponsor-d-mid{
+    position: relative;
+    left: 460px;
+    bottom: 90px
+}
+
+.speaker-img{
+    width:177px;
+    height: 203px;
+}
+
+.speaker-1{
+    position: relative;
+    left: 90px; /* 70px */
+}
+
+.speaker-2{
+    position: relative;
+    left: 307px;
+    bottom: 264.3px;
+}
+
+.speaker-3{
+    position: relative;
+    left: 524px;
+    bottom: 528px;
+}
+
+.speaker-4{
+    position: relative;
+    left: 741px;
+    bottom: 792.9px;
+}
+
+.speaker-5{
+    position: relative;
+    left: 958px;
+    bottom: 1057.2px;
+}
+
+
+
+  
