@@ -88,8 +88,8 @@ img {
     color: #14DFAE;
 }
 
-#about, #team, #schedule, #faq, #contact, #sponsors, #speakers {
-    padding: 100px 10% !important;
+#about, #team, #faq, #schedule, #contact, #sponsors, #speakers, #organizing-team {
+    padding: 100px -40%!important;
     z-index: 1;
 }
 
@@ -171,6 +171,125 @@ img {
     bottom: 1057.2px;
 }
 
+#Name-1{
+    position: relative;
+    text-align: justify;
+    left: 145px;
+    top: 50px;
+    color: white
+}
 
+#Name-2{
+    position: relative;
+    text-align: justify;
+    left: 365px;
+    top: 5px;
+    color: white
+}
 
-  
+#Name-3{
+    position: relative;
+    text-align: justify;
+    left: 585px;
+    bottom: 40px;
+    color: white
+}
+
+#Name-4{
+    position: relative;
+    text-align: justify;
+    left: 805px;
+    bottom: 85px;
+    color: white
+}
+
+#Name-5{
+    position: relative;
+    text-align: justify;
+    left: 1025px;
+    bottom: 130px;
+    color: white
+}
+
+.rectangle-1{
+    position:relative;
+    left: 15%;
+    bottom: 86.5%;/*10*/
+    height: 80px;
+    width: 900px;
+    background: rgba(137, 222, 251, 0.47);
+    border-radius: 40px;
+}
+
+.rectangle-2{
+    position:relative;
+    left: 15%;
+    bottom: 76.5%;
+    height: 80px;
+    width: 900px;
+    background: rgba(97, 163, 185, 0.33);
+    border-radius: 40px;
+}  
+
+.rectangle-3{
+    position:relative;
+    left: 15%;
+    bottom: 66.5%;
+    height: 80px;
+    width: 900px;
+    background: rgba(97, 163, 185, 0.33);
+    border-radius: 40px;
+}  
+
+.rectangle-4{
+    position:relative;
+    left: 15%;
+    bottom: 56.5%;
+    height: 80px;
+    width: 900px;
+    background: rgba(97, 163, 185, 0.33);
+    border-radius: 40px;
+}  
+
+.schedule-s-e{
+    position: relative;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    text-align: justify;
+    color: white;
+    font-weight: lighter;
+    font-size: 16px;
+    left: 47%;
+}
+
+.schedule-start{
+    position: relative;
+    right: 28%;
+    top: 64px;
+    z-index:10;
+}
+
+.schedule-end{
+    position: relative;
+    right: 18%;
+    top: 16px;
+    z-index:10;
+}
+
+.schedule-event{
+    position: relative;
+    right: 0%;
+    left: 0%;
+    bottom: 33px;
+    z-index:10;   
+}
+
+#schedule{
+    position: relative;
+    bottom: 90px;
+}
+
+#organizing-team{
+    position: relative;
+    top: 95px
+}
