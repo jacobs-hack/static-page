@@ -7,12 +7,47 @@ html{
 }
 
 section{
-    max-height: 100%;
     height: 100vh;
     width: 100%;
     justify-content: center;
     text-align: center !important;
 }
+
+nav {
+    position: sticky;
+    width: 100%;
+    top: 0%;
+    bottom: 0;
+    background: transparent;
+    z-index: 1000;
+}
+  
+nav .container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1px;
+  }
+  
+  nav .container ul li {
+    display: inline-block;
+  }
+  
+  nav .container ul li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #1E97D7;
+    font-size: 18px;
+    transition: 0.3s ease color;
+  }
+  
+  nav .container ul li.active a, nav .container ul li a:not(nav .container ul li button a):hover {
+    transition: 0.3s ease color;
+    color: #91F9E6;
+    font-weight: bold;
+  }
 
 .upper-left{
     position: absolute;
@@ -68,7 +103,7 @@ img {
     position: absolute;
     left: 33.68%;
     right: 31.39%;
-    top: 8.42%;
+    top: 18.42%;
     bottom: 40.7%;
 }
 
@@ -91,6 +126,7 @@ img {
 #about, #team, #faq, #schedule, #contact, #sponsors, #speakers, #organizing-team {
     padding: 100px -40%!important;
     z-index: 1;
+    transition: 0.5s;
 }
 
 #about-title{
@@ -289,7 +325,125 @@ img {
     bottom: 90px;
 }
 
-#organizing-team{
+#team{
     position: relative;
     top: 95px
 }
+
+
+.rectfaq-1{
+    position:relative;
+    left: 5%;
+    bottom: 0%;/*10*/
+    height: 50px;
+    width: 500px;
+    background: rgba(137, 222, 251, 0.47);
+    border-radius: 40px;
+}
+
+.rectfaq-2{
+    position:relative;
+    left: 5%;
+    top: 5%;/*10*/
+    height: 50px;
+    width: 500px;
+    background: rgba(137, 222, 251, 0.47);
+    border-radius: 40px;
+}
+
+.rectfaq-3{
+    position:relative;
+    left: 5%;
+    top: 10%;/*10*/
+    height: 50px;
+    width: 500px;
+    background: rgba(137, 222, 251, 0.47);
+    border-radius: 40px;
+}
+
+.rectfaq-4{
+    position:relative;
+    left: 5%;
+    top: 15%;/*10*/
+    height: 50px;
+    width: 500px;
+    background: rgba(137, 222, 251, 0.47);
+    border-radius: 40px;
+}
+
+.rectfaq-5{
+    position:relative;
+    left: 55%;
+    bottom: 32.5%;/*10*/
+    height: 50px;
+    width: 500px;
+    background: rgba(137, 222, 251, 0.47);
+    border-radius: 40px;
+}
+
+.rectfaq-6{
+    position:relative;
+    left: 55%;
+    bottom: 27.5%;/*10*/
+    height: 50px;
+    width: 500px;
+    background: rgba(137, 222, 251, 0.47);
+    border-radius: 40px;
+}
+
+.rectfaq-7{
+    position:relative;
+    left: 55%;
+    bottom: 22.5%;/*10*/
+    height: 50px;
+    width: 500px;
+    background: rgba(137, 222, 251, 0.47);
+    border-radius: 40px;
+}
+
+.rectfaq-8{
+    position:relative;
+    left: 55%;
+    bottom: 17.5%;/*10*/
+    height: 50px;
+    width: 500px;
+    background: rgba(137, 222, 251, 0.47);
+    border-radius: 40px;
+}
+
+
+#map {
+  height: 500px;
+  width: 100%;
+}
+
+.mapping iframe{
+    position:relative;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.bg-white{
+    position: relative;
+    height: 200px;
+    width: 550px;
+    background: #e3f9ed;
+    bottom: 44.836%;
+    left: 14.84%;
+    border-radius: 30px;
+    opacity: 0.98;
+}
+
+.bg-white-left{
+    position: relative;
+    right: 24%;
+    top: 15%;
+}
+
+.bg-white-right{
+    position: relative;
+    left: 20%;
+    bottom: 48%;
+    font-size: 0.8rem;
+}
+

@@ -5,8 +5,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <!--Navigation Bar just incase-->
+
+    <nav class="navi">
+        <div class="container">
+          <ul>
+            <li class="about"><a href="#about">About</a></li>
+            <li class="speakers"><a href="#speakers">Speakers</a></li>
+            <li class="schedule"><a href="#schedule">Schedule</a></li>
+            <li class="team"><a href="#team">Team</a></li>
+            <li class="faq"><a href="#faq">FAQ</a></li>
+            <li class="contact"><a href="#contact">Contact</a></li>
+            <li class="register">
+              <!--<button class="tracking-wide text-white bg-blue-600 rounded-xl" id="register-1">
+                <a href="https://jhack2021.herokuapp.com">Register</a>
+              </button>-->
+            </li>
+          </ul>
+        </div>
+      </nav>
     <!--Navigation Bar just incase-->
 
     <!------------------------Background Leaves------------------------->
@@ -41,7 +58,7 @@
     <!------------------------Intro Jacobs Hacks------------------------->
 
     <!--------------------------------ABOUT------------------------------->
-    <section id="About">
+    <section id="about">
 
         <div class="titles">
             <h1 id="about-title">What is jacobsHack?</h1>
@@ -59,7 +76,7 @@
     <!--------------------------------ABOUT------------------------------->
 
     <!--------------------------------Sponsors------------------------------->
-    <section id="sponsor">
+    <section id="sponsors">
         <div class="titles">
             <h1 id="about-title">Sponsors</h1>
         </div>
@@ -78,7 +95,7 @@
     <!--------------------------------Sponsors------------------------------->
 
     <!--------------------------------Speakers------------------------------->
-    <section id="speaker">
+    <section id="speakers">
         <div class="titles">
             <h1 id="about-title">Speakers</h1>
         </div>
@@ -144,7 +161,7 @@
     
        <!--------------------------------Organizing------------------------------->
 
-    <section id="organizing-team">
+    <section id="team">
         <div class="titles">
             <h1 id="about-title">Organizing Team</h1>
         </div>
@@ -173,7 +190,75 @@
             <h2 id="Name-5">Name</h2>
         </div>
     </section>
-    <!--------------------------------Speakers------------------------------->
+    <!--------------------------------Organizing!------------------------------->
 
+    <!--------------------------------FAQ------------------------------->
+    <section id="faq">
+        <div class="titles">
+            <h1 id="about-title">FAQ</h1>  
+        </div>
+
+        <div class="rectfaq-1"></div>
+        <div class="rectfaq-2"></div>
+        <div class="rectfaq-3"></div>
+        <div class="rectfaq-4"></div>
+        <div class="rectfaq-5"></div>
+        <div class="rectfaq-6"></div>
+        <div class="rectfaq-7"></div>
+        <div class="rectfaq-8"></div>
+
+
+    </section>
+
+    <!--------------------------------FAQ------------------------------->
+
+          <!--______________________________ CONTACT ______________________________-->
+          <section id="contact">
+            <div class="titles">
+              <h1 id="about-title">Contact</h1>
+            </div>
+    
+            <div id="map">
+                <span class="mapping">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2391.7608495565973!2d8.648459015831735!3d53.16833017994205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b12ca189108299%3A0x68806e1d530b2b1d!2sJacobs%20University%20IRC%2C%20Campus%20Ring%201%2C%2028759%20Bremen!5e0!3m2!1sen!2sde!4v1630875721734!5m2!1sen!2sde" width="70%" height="80%" class="absolute inset-0" title="map" marginheight="0" marginwidth="0" scrolling="no"  style="filter: grayscale(0.3) contrast(0.8) opacity(0.7);"></iframe>
+                </span>
+              <div class="bg-white">
+                <div class="bg-white-left">
+                    <h2 class="">ADDRESS</h2>
+                    <p class="">Campus Ring 1<br>28759 Bremen<br>Germany</p>
+                </div>
+                
+                <div class="bg-white-right">
+                    <h2>TEAM EMAIL</h2>
+                    <a href="mailto:team@jacobshack.com">team@jacobshack.com</a>
+                    <h2>ORGANIZERS EMAILS</h2>
+                    <p> <a href="mailto:d.checiu@jacobs-university.de">d.checiu@jacobs-university.de</a><br>
+                    <a href="mailto:d.tsayem@jacobs-university.de">d.tsayem@jacobs-university.de</a></p>
+                </div>
+              </div>
+          </section>
 </body>
+
+
+<script>
+    window.addEventListener('scroll', ()=> {
+        const scrolled = window.scrollY;
+        console.log(scrolled);
+
+        const navi = document.querySelector("nav")
+        if(scrolled>=10){
+            navi.style.background = "#031c0e";
+            navi.style.transition = "0.5s";
+        }
+
+        else{
+            navi.style.background = "transparent";
+            navi.style.transition = "0.5s";
+
+        }
+    });
+
+    
+</script>
+
 </html>
