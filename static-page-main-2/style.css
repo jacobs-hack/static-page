@@ -1,55 +1,59 @@
-
-html{
+html {
     scroll-behavior: smooth;
     background: #161E23;
-    max-width: 100%;
-    overflow-x: hidden
+    width: 100%;
+    /* overflow-x: hidden */
 }
 
-section{
+body {
+    width: 100%;
+}
+
+/* section {
     height: 100vh;
     width: 100%;
     justify-content: center;
     text-align: center !important;
-}
+} */
 
-nav {
+/* nav {
     position: sticky;
     width: 100%;
     top: 0%;
     bottom: 0;
     background: transparent;
     z-index: 1000;
-}
-  
+} */
+
 nav .container {
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
     padding: 1px;
-  }
-  
-  nav .container ul li {
+}
+
+nav .container ul li {
     display: inline-block;
-  }
-  
-  nav .container ul li a {
+}
+
+nav .container ul li a {
     display: inline-block;
     text-decoration: none;
     padding: 10px 20px;
     color: #1E97D7;
     font-size: 18px;
     transition: 0.3s ease color;
-  }
-  
-  nav .container ul li.active a, nav .container ul li a:not(nav .container ul li button a):hover {
+}
+
+nav .container ul li.active a,
+nav .container ul li a:not(nav .container ul li button a):hover {
     transition: 0.3s ease color;
     color: #91F9E6;
     font-weight: bold;
-  }
+}
 
-.upper-left{
+.upper-left {
     position: absolute;
     width: 278.51px;
     height: 405.2px;
@@ -58,7 +62,7 @@ nav .container {
 
 }
 
-.lower-left{
+.lower-left {
     position: absolute;
     width: 98.31px;
     height: 311px;
@@ -67,7 +71,7 @@ nav .container {
 
 }
 
-.lower-middle{
+.lower-middle {
     position: absolute;
     width: 472px;
     height: 304.43px;
@@ -75,7 +79,7 @@ nav .container {
     top: 435px;
 }
 
-.lower-right{
+.lower-right {
     position: absolute;
     width: 311.24px;
     height: 376.39px;
@@ -83,7 +87,7 @@ nav .container {
     top: 270px;
 }
 
-.upper-right{
+.upper-right {
     position: absolute;
     width: 320.91px;
     height: 154.19px;
@@ -98,45 +102,60 @@ img {
 }
 
 
+#intro {
+    background-image: url("./img/intro.png");
+    background-position-x: center;
+    /* background-position-y: -10px; */
+    background-repeat: no-repeat;
+    height: 91vh;
+    background-size: cover;
+}
 
-.intro-img{
+/* .intro-img {
     position: absolute;
     left: 33.68%;
     right: 31.39%;
     top: 18.42%;
     bottom: 40.7%;
-}
+} */
 
-#intro-txt-1{
+#intro-txt-1 {
     position: absolute;
     left: 30.97%;
     right: 27.22%;
     top: 59.67%;
     bottom: 35.15%;
-    
+
     font-family: 'Adoria';
     font-style: normal;
     font-weight: 400;
     font-size: 70px;
     line-height: 77px;
-    
+
     color: #14DFAE;
 }
 
-#about, #team, #faq, #schedule, #contact, #sponsors, #speakers, #organizing-team {
-    padding: 100px -40%!important;
+#about,
+#team,
+#faq,
+#schedule,
+#contact,
+#sponsors,
+#speakers,
+#organizing-team {
+    padding: 100px -40% !important;
     z-index: 1;
     transition: 0.5s;
 }
 
-#about-title{
+#about-title {
     color: white;
     font-size: 52px;
     font-family: 'Untitled';
     font-style: normal;
 }
 
-.description{
+.description {
     margin-top: 10%;
     margin-left: 20%;
     margin-right: 20%;
@@ -147,67 +166,68 @@ img {
     font-size: 15px;
     line-height: 25px;
     text-align: justify;
-    
+
     color: #FFFFFF;
 }
 
-.sponsor-img{
+.sponsor-img {
     width: 349px;
     height: 179px;
 }
 
-.sponsor-u-left{
+.sponsor-u-left {
     position: relative;
     left: 60%;
 }
 
-.sponsor-u-right{
+.sponsor-u-right {
     position: relative;
     left: 700px;
     bottom: 164.3px;
 }
 
-.sponsor-d-mid{
+.sponsor-d-mid {
     position: relative;
     left: 460px;
     bottom: 90px
 }
 
-.speaker-img{
-    width:177px;
+.speaker-img {
+    width: 177px;
     height: 203px;
 }
 
-.speaker-1{
+.speaker-1 {
     position: relative;
-    left: 90px; /* 70px */
+    left: 90px;
+    /* 70px */
 }
 
-.speaker-2{
+.speaker-2 {
     position: relative;
     left: 307px;
     bottom: 264.3px;
 }
 
-.speaker-3{
+.speaker-3 {
     position: relative;
     left: 524px;
     bottom: 528px;
 }
 
-.speaker-4{
+.speaker-4 {
     position: relative;
     left: 741px;
     bottom: 792.9px;
 }
 
-.speaker-5{
+.speaker-5 {
     position: relative;
     left: 958px;
     bottom: 1057.2px;
 }
 
-#Name-1{
+#Name-1 {
     position: relative;
     text-align: justify;
     left: 145px;
@@ -215,7 +235,7 @@ img {
     color: white
 }
 
-#Name-2{
+#Name-2 {
     position: relative;
     text-align: justify;
     left: 365px;
@@ -223,7 +243,7 @@ img {
     color: white
 }
 
-#Name-3{
+#Name-3 {
     position: relative;
     text-align: justify;
     left: 585px;
@@ -231,7 +251,7 @@ img {
     color: white
 }
 
-#Name-4{
+#Name-4 {
     position: relative;
     text-align: justify;
     left: 805px;
@@ -239,7 +259,7 @@ img {
     color: white
 }
 
-#Name-5{
+#Name-5 {
     position: relative;
     text-align: justify;
     left: 1025px;
@@ -247,47 +267,48 @@ img {
     color: white
 }
 
-.rectangle-1{
-    position:relative;
+.rectangle-1 {
+    position: relative;
     left: 15%;
-    bottom: 86.5%;/*10*/
+    bottom: 86.5%;
+    /*10*/
     height: 80px;
     width: 900px;
     background: rgba(137, 222, 251, 0.47);
     border-radius: 40px;
 }
 
-.rectangle-2{
-    position:relative;
+.rectangle-2 {
+    position: relative;
     left: 15%;
     bottom: 76.5%;
     height: 80px;
     width: 900px;
     background: rgba(97, 163, 185, 0.33);
     border-radius: 40px;
-}  
+}
 
-.rectangle-3{
-    position:relative;
+.rectangle-3 {
+    position: relative;
     left: 15%;
     bottom: 66.5%;
     height: 80px;
     width: 900px;
     background: rgba(97, 163, 185, 0.33);
     border-radius: 40px;
-}  
+}
 
-.rectangle-4{
-    position:relative;
+.rectangle-4 {
+    position: relative;
     left: 15%;
     bottom: 56.5%;
     height: 80px;
     width: 900px;
     background: rgba(97, 163, 185, 0.33);
     border-radius: 40px;
-}  
+}
 
-.schedule-s-e{
+.schedule-s-e {
     position: relative;
     font-family: 'Times New Roman';
     font-style: normal;
@@ -298,113 +319,121 @@ img {
     left: 47%;
 }
 
-.schedule-start{
+.schedule-start {
     position: relative;
     right: 28%;
     top: 64px;
-    z-index:10;
+    z-index: 10;
 }
 
-.schedule-end{
+.schedule-end {
     position: relative;
     right: 18%;
     top: 16px;
-    z-index:10;
+    z-index: 10;
 }
 
-.schedule-event{
+.schedule-event {
     position: relative;
     right: 0%;
     left: 0%;
     bottom: 33px;
-    z-index:10;   
+    z-index: 10;
 }
 
-#schedule{
+#schedule {
     position: relative;
     bottom: 90px;
 }
 
-#team{
+#team {
     position: relative;
     top: 95px
 }
 
 
-.rectfaq-1{
-    position:relative;
+.rectfaq-1 {
+    position: relative;
     left: 5%;
-    bottom: 0%;/*10*/
+    bottom: 0%;
+    /*10*/
     height: 50px;
     width: 500px;
     background: rgba(137, 222, 251, 0.47);
     border-radius: 40px;
 }
 
-.rectfaq-2{
-    position:relative;
+.rectfaq-2 {
+    position: relative;
     left: 5%;
-    top: 5%;/*10*/
+    top: 5%;
+    /*10*/
     height: 50px;
     width: 500px;
     background: rgba(137, 222, 251, 0.47);
     border-radius: 40px;
 }
 
-.rectfaq-3{
-    position:relative;
+.rectfaq-3 {
+    position: relative;
     left: 5%;
-    top: 10%;/*10*/
+    top: 10%;
+    /*10*/
     height: 50px;
     width: 500px;
     background: rgba(137, 222, 251, 0.47);
     border-radius: 40px;
 }
 
-.rectfaq-4{
-    position:relative;
+.rectfaq-4 {
+    position: relative;
     left: 5%;
-    top: 15%;/*10*/
+    top: 15%;
+    /*10*/
     height: 50px;
     width: 500px;
     background: rgba(137, 222, 251, 0.47);
     border-radius: 40px;
 }
 
-.rectfaq-5{
-    position:relative;
+.rectfaq-5 {
+    position: relative;
     left: 55%;
-    bottom: 32.5%;/*10*/
+    bottom: 32.5%;
+    /*10*/
     height: 50px;
     width: 500px;
     background: rgba(137, 222, 251, 0.47);
     border-radius: 40px;
 }
 
-.rectfaq-6{
-    position:relative;
+.rectfaq-6 {
+    position: relative;
     left: 55%;
-    bottom: 27.5%;/*10*/
+    bottom: 27.5%;
+    /*10*/
     height: 50px;
     width: 500px;
     background: rgba(137, 222, 251, 0.47);
     border-radius: 40px;
 }
 
-.rectfaq-7{
-    position:relative;
+.rectfaq-7 {
+    position: relative;
     left: 55%;
-    bottom: 22.5%;/*10*/
+    bottom: 22.5%;
+    /*10*/
     height: 50px;
     width: 500px;
     background: rgba(137, 222, 251, 0.47);
     border-radius: 40px;
 }
 
-.rectfaq-8{
-    position:relative;
+.rectfaq-8 {
+    position: relative;
     left: 55%;
-    bottom: 17.5%;/*10*/
+    bottom: 17.5%;
+    /*10*/
     height: 50px;
     width: 500px;
     background: rgba(137, 222, 251, 0.47);
@@ -413,17 +442,17 @@ img {
 
 
 #map {
-  height: 500px;
-  width: 100%;
+    height: 500px;
+    width: 100%;
 }
 
-.mapping iframe{
-    position:relative;
+.mapping iframe {
+    position: relative;
     border-radius: 30px;
     overflow: hidden;
 }
 
-.bg-white{
+.bg-white {
     position: relative;
     height: 200px;
     width: 550px;
@@ -434,16 +463,15 @@ img {
     opacity: 0.98;
 }
 
-.bg-white-left{
+.bg-white-left {
     position: relative;
     right: 24%;
     top: 15%;
 }
 
-.bg-white-right{
+.bg-white-right {
     position: relative;
     left: 20%;
     bottom: 48%;
     font-size: 0.8rem;
 }
-
