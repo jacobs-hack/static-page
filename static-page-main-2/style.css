@@ -1,12 +1,18 @@
 html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     scroll-behavior: smooth;
     background: #161E23;
-    width: 100%;
+    width: 100vw;
+    height: 100%;
     /* overflow-x: hidden */
 }
 
 body {
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 /* section {
@@ -25,9 +31,16 @@ body {
     z-index: 1000;
 } */
 
+#intro {
+    background-image: url("./img/intro.png");
+    background-repeat: no-repeat;
+    height: 91vh;
+}
+
+
 nav .container {
     width: 100%;
-    max-width: 1000px;
+    /* max-width: 1000px; */
     margin: 0 auto;
     text-align: center;
     padding: 1px;
@@ -102,14 +115,6 @@ img {
 }
 
 
-#intro {
-    background-image: url("./img/intro.png");
-    background-position-x: center;
-    /* background-position-y: -10px; */
-    background-repeat: no-repeat;
-    height: 91vh;
-    background-size: cover;
-}
 
 /* .intro-img {
     position: absolute;
@@ -176,20 +181,20 @@ img {
 }
 
 .sponsor-u-left {
-    position: relative;
-    left: 60%;
+    /* position: relative; */
+    /* left: 60%; */
 }
 
 .sponsor-u-right {
-    position: relative;
-    left: 700px;
+    /* position: relative; */
+    /* left: 700px; */
     bottom: 164.3px;
 }
 
 .sponsor-d-mid {
-    position: relative;
-    left: 460px;
-    bottom: 90px
+    /* position: relative; */
+    /* left: 460px; */
+    /* bottom: 90px */
 }
 
 .speaker-img {
@@ -198,41 +203,41 @@ img {
 }
 
 .speaker-1 {
-    position: relative;
-    left: 90px;
+    /* position: relative; */
+    /* left: 90px; */
     /* 70px */
 }
 
 .speaker-2 {
-    position: relative;
-    left: 307px;
-    bottom: 264.3px;
+    /* position: relative; */
+    /* left: 307px; */
+    /* bottom: 264.3px; */
 }
 
 .speaker-3 {
-    position: relative;
-    left: 524px;
-    bottom: 528px;
+    /* position: relative; */
+    /* left: 524px; */
+    /* bottom: 528px; */
 }
 
 .speaker-4 {
-    position: relative;
-    left: 741px;
-    bottom: 792.9px;
+    /* position: relative; */
+    /* left: 741px; */
+    /* bottom: 792.9px; */
 }
 
 .speaker-5 {
-    position: relative;
-    left: 958px;
-    bottom: 1057.2px;
+    /* position: relative; */
+    /* left: 958px; */
+    /* bottom: 1057.2px; */
 }
 
 #Name-1 {
-    position: relative;
-    text-align: justify;
-    left: 145px;
-    top: 50px;
-    color: white
+    /* position: relative; */
+    /* text-align: justify; */
+    /* left: 145px; */
+    /* top: 50px; */
+    /* color: white */
 }
 
 #Name-2 {
@@ -474,4 +479,9 @@ img {
     left: 20%;
     bottom: 48%;
     font-size: 0.8rem;
+}
+
+#test {
+    width: 100%;
+    color: white;
 }
