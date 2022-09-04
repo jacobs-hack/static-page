@@ -39,8 +39,8 @@ body {
     margin: 0;
     padding: 0;
     /* background-color: #D8DAD3; */
-    background: rgb(225, 229, 238);
-    background: linear-gradient(69deg, rgba(225, 229, 238, 1) 0%, rgba(42, 50, 75, 1) 51%, rgba(21, 130, 107, 1) 98%);
+    background: rgb(21, 130, 107);
+    background: linear-gradient(121deg, rgba(21, 130, 107, 1) 0%, rgba(40, 57, 78, 1) 39%, rgba(21, 130, 107, 1) 86%, rgba(21, 130, 107, 1) 100%);
 }
 
 #navbar {
@@ -63,9 +63,11 @@ body {
 .navbar-container a {
     text-decoration: none;
     padding: 10px 20px;
-    color: #1E97D7;
+    color: #426077;
     font-size: 18px;
     transition: 0.5s;
+
+    font-family: 'loveleaves';
 }
 
 .navbar-container a:hover {
@@ -159,6 +161,8 @@ body {
     width: 100%;
     margin: 0;
 
+    font-family: 'Roboto Mono';
+
     text-align: center;
     height: fit-content;
     font-size: 2rem;
@@ -171,24 +175,28 @@ body {
 
 
 #sponsors {
-    background-image: url("./img/sponsors_mid_left.png");
+    background-image: url("./img/sponsors_mid_left.png"), url("./img/sponsors_mesh.png");
     background-repeat: no-repeat;
-    background-position: center left;
+    background-position: center left, center center;
+    background-size: auto, cover;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 #speakers {
-    background-image: url("./img/speakers_top_right.png"), url("./img/speakers_center_left.png"), url("./img/speakers_bottom_left.png");
+    background-image: url("./img/speakers_top_right.png"), url("./img/speakers_center_left.png"), url("./img/speakers_bottom_left.png"), url("./img/speakers_mesh.png");
     background-repeat: no-repeat;
-    background-position: top right, center left, bottom left;
+    background-position: top right, center left, bottom left, center center;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 #schedule {
+    background-image: url("./img/schedule_mesh.png");
+    background-repeat: no-repeat;
+    background-position: center center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -210,7 +218,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    outline: 1px solid red;
 }
 
 #map {
