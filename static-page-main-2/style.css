@@ -31,23 +31,39 @@ html {
     width: 100vw;
     height: 100%;
     overflow-x: hidden;
-    scroll-snap-type: y proximity;
+    color: #F3F7FB;
 }
 
 body {
     width: 100vw;
     margin: 0;
     padding: 0;
-    background: rgb(21, 130, 107);
-    background: linear-gradient(121deg, #1f5d2f 0%, #25252a 39%, #1f5d2f 0% 86%, #25252a 100%);
+    background: rgb(31, 93, 47);
+    background: linear-gradient(121deg, rgba(31, 93, 47, 1) 0%, rgba(0, 0, 0, 1) 51%, rgba(31, 93, 47, 1) 86%);
+}
+
+.padding {
+    scroll-snap-align: start;
+    height: 6vh;
+}
+
+.content {
+    height: 100vh;
 }
 
 #navbar {
     position: fixed;
-    background-color: #091e05;
     width: 100%;
     top: 0;
     height: 6vh;
+    transition: 1s;
+}
+
+.sticky {
+    /* background-color: rgb(30, 91, 46, 95%); */
+    background-color: #1B1716;
+    transition: 1s;
+    /* border-radius: 0 0 40px 40px; */
 }
 
 .navbar-container {
@@ -61,7 +77,7 @@ body {
 .navbar-container a {
     text-decoration: none;
     padding: 10px 20px;
-    color: #426077;
+    color: #8D98A7;
     font-size: 18px;
     transition: 0.5s;
 
@@ -69,9 +85,19 @@ body {
 }
 
 .navbar-container a:hover {
-    color: #91F9E6;
+    color: #F3F7FB;
     transition: 0.5s;
 
+}
+
+#register_button {
+    background-color: inherit;
+    border: none;
+}
+
+#register_button a:hover {
+    background-color: #1F5D2F;
+    border-radius: 4px;
 }
 
 #mlh-trust-badge {
@@ -81,7 +107,7 @@ body {
 
 
 #intro {
-    background-image: url("./img/intro_top_left.png"), url("./img/into_top_right.png"), url("./img/intro_bottom_right.png"), url("./img/intro_mid_left.png"), url("./img/intro_mesh.svg");
+    background-image: url("./img/intro_top_left.png"), url("./img/into_top_right.png"), url("./img/intro_bottom_right.png"), url("./img/intro_mid_left.png"), url("./img/intro_mesh2.png");
     background-repeat: no-repeat;
     background-position: top left, top right, bottom right, bottom 20px left, center center;
     background-size: auto, auto, auto, auto, cover;
@@ -117,20 +143,19 @@ body {
 #intro-txt-2 {
     font-family: "Loveleaves";
     font-size: 2.5em;
-    color: white;
 }
 
 .titles {
     height: fit-content;
-    color: white;
     font-size: 7rem;
     font-family: 'Loveleaves';
 }
 
 #about {
-    background-image: url("./img/intro_title_top_left.png");
+    background-image: url("./img/intro_title_top_left.png"), url("./img/about_mesh2.png");
     background-repeat: no-repeat;
-    background-position: top left;
+    background-position: top left, center center;
+    background-size: auto, cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -172,10 +197,10 @@ body {
 
 
 #sponsors {
-    /* background-image: url("./img/sponsors_mid_left.png"), url("./img/sponsors_mesh.png"); */
+    background-image: url("./img/sponsors_mesh.png");
     background-repeat: no-repeat;
-    background-position: center left, center center;
-    background-size: auto, cover;
+    background-position: center center;
+    background-size: 100% 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -183,9 +208,10 @@ body {
 }
 
 #speakers {
-    /* background-image: url("./img/speakers_top_right.png"), url("./img/speakers_center_left.png"), url("./img/speakers_bottom_left.png"), url("./img/speakers_mesh.png"); */
+    background-image: url("./img/speakers_mesh.png");
     background-repeat: no-repeat;
-    background-position: top right, center left, bottom left, center center;
+    background-position: 50%;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -354,12 +380,3 @@ input[type='checkbox'] {
 #contact-card-left {}
 
 #contact-card-right {}
-
-.padding {
-    scroll-snap-align: start;
-    height: 6vh;
-}
-
-.content {
-    height: 94vh;
-}

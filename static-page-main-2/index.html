@@ -17,7 +17,6 @@
     <!--Navigation Bar just incase-->
 
 
-    <!------------------------Background Leaves------------------------->
     <div id="navbar">
         <nav class="navbar-container">
             <a href="#about">About</a>
@@ -26,7 +25,7 @@
             <a href="#team">Team</a>
             <a href="#faq">FAQ</a>
             <a href="#contact">Contact</a>
-            <button class="tracking-wide text-white bg-blue-600 rounded-xl" id="register-1">
+            <button id="register_button">
                 <a href="https://jhack2022.herokuapp.com">Register</a>
             </button>
             <a id="mlh-trust-badge"
@@ -38,7 +37,7 @@
         </nav>
     </div>
 
-    <div class="padding"></div>
+    <!------------------------Intro Jacobs Hacks------------------------->
 
     <section id="intro" class="content">
         <div id="intro-txt-1">
@@ -48,10 +47,9 @@
             November 5th-6th
         </div>
     </section>
-
     <!------------------------Intro Jacobs Hacks------------------------->
 
-    <div class="padding"></div>
+
 
     <!--------------------------------ABOUT------------------------------->
     <section id="about" class="content">
@@ -75,7 +73,6 @@
     </section>
     <!--------------------------------ABOUT------------------------------->
 
-    <div class="padding"></div>
 
 
     <!--------------------------------Sponsors------------------------------->
@@ -83,21 +80,20 @@
         <div class="titles">
             <p id="content-title">Sponsors</p>
         </div>
-        <div class="sponsor-img">
-            <div class="sponsor-u-left">
-                <img src="img/Rectangle-sponsor.png" alt="">
+        <div id="sponsors-list">
+            <div id="sponsor-1">
+                Sponsor1
             </div>
-            <div class="sponsor-u-right">
-                <img src="img/Rectangle-sponsor.png" alt="">
+            <div id="sponsor-2">
+                Sponsor2
             </div>
-            <div class="sponsor-d-mid">
-                <img src="img/Rectangle-sponsor.png" alt="">
+            <div id="sponsor-3">
+                Sponsor3
             </div>
         </div>
     </section>
     <!--------------------------------Sponsors------------------------------->
 
-    <div class="padding"></div>
 
 
     <!--------------------------------Speakers------------------------------->
@@ -108,7 +104,6 @@
     </section>
     <!--------------------------------Speakers------------------------------->
 
-    <div class="padding"></div>
 
     <!--------------------------------Schedule------------------------------->
     <section id="schedule" class="content">
@@ -120,7 +115,6 @@
     </section>
     <!--------------------------------Schedule------------------------------->
 
-    <div class="padding"></div>
 
     <!--------------------------------Organizing------------------------------->
 
@@ -132,7 +126,6 @@
     </section>
     <!--------------------------------Organizing!------------------------------->
 
-    <div class="padding"></div>
 
 
     <!--------------------------------FAQ------------------------------->
@@ -330,7 +323,6 @@
 
     <!--------------------------------FAQ------------------------------->
 
-    <div class="padding"></div>
 
 
     <!--______________________________ CONTACT ______________________________-->
@@ -374,7 +366,8 @@
     var sticky = navbar.offsetTop;
 
     function myFunction() {
-        if (window.pageYOffset >= sticky) {
+
+        if (window.pageYOffset > sticky) {
             navbar.classList.add("sticky")
         } else {
             navbar.classList.remove("sticky");
