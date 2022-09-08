@@ -183,11 +183,12 @@ body {
     width: 100%;
     margin: 0;
 
+
+    font-size: 1.3rem;
     font-family: 'Roboto Mono';
 
     text-align: center;
     height: fit-content;
-    font-size: 2rem;
     line-height: 2rem;
     max-width: 90%;
     min-width: 60%;
@@ -208,10 +209,10 @@ body {
 }
 
 #speakers {
-    background-image: url("./img/speakers_mesh.png");
+    background-image: url("./img/speakers_mesh.png"), url("./img/speakers_top_right.png");
     background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: cover;
+    background-position: 50%, top right;
+    background-size: cover, contain;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -225,6 +226,42 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#schedule_table {
+    display: flex;
+    flex-direction: column;
+}
+
+.schedule_row {
+    display: flex;
+    flex-direction: row;
+    background-color: #8D98A7;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 0;
+    height: fit-content;
+}
+
+
+.row_time {
+    display: flex;
+}
+
+.row_time {
+    margin: 3px;
+}
+
+#schedule-description {
+
+    font-size: 1.3rem;
+    font-family: 'Roboto Mono';
+
+    text-align: center;
+    height: fit-content;
+    line-height: 2rem;
+    max-width: 90%;
+    min-width: 60%;
 }
 
 #team {
