@@ -49,6 +49,7 @@ body {
 
 .content {
     height: 100vh;
+    min-height: 700px;
 }
 
 #navbar {
@@ -198,14 +199,40 @@ body {
 
 
 #sponsors {
-    background-image: url("./img/sponsors_mesh.png");
+    background-image: url("./img/sponsors_mesh.png"), url("./img/sponsors_mid_left.png");
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100% 90%;
+    background-position: center center, bottom left;
+    background-size: 100% 90%, auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
 
+#sponsors-list {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    justify-content: center;
+    column-gap: 50px;
+    row-gap: 50px;
+    transition: 0.5s;
+}
+
+.sponsor {
+    background-color: #F3F7FB;
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    margin-right: 50px;
+
+}
+
+.sponsor:hover {
+    width: 210px;
+    height: 210px;
+    margin-right: 50px;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 #speakers {
@@ -220,12 +247,12 @@ body {
 }
 
 #schedule {
-    /* background-image: url("./img/schedule_mesh.png"); */
     background-repeat: no-repeat;
     background-position: center center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 #schedule_table {
@@ -253,7 +280,6 @@ body {
 }
 
 #schedule-description {
-
     font-size: 1.3rem;
     font-family: 'Roboto Mono';
 
@@ -266,25 +292,27 @@ body {
 
 #team {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 #team_content {
-    width: 100%;
+    width: 80%;
     display: grid;
     grid-template-columns: repeat(auto-fit, 200px);
     column-gap: 50px;
     row-gap: 50px;
+    justify-content: center;
 }
 
 .person_content {
     border: 1px solid black;
     border-radius: 4px;
     width: 200px;
-    background-color: #1B1716;
+    /* background-color: #1B1716; */
+    text-align: center;
 
 }
 
@@ -307,6 +335,7 @@ body {
 }
 
 .grid-cont {
+    width: 80%;
     height: 80%;
     display: grid;
     grid-template-columns: 2fr 2fr;
@@ -315,7 +344,7 @@ body {
 }
 
 .wrap-collabsible {
-    z-index: 1;
+    /* z-index: 0; */
 }
 
 input[type='checkbox'] {
@@ -328,7 +357,7 @@ input[type='checkbox'] {
     text-align: center;
     padding: 1rem;
     color: #DDD;
-    background: #4c7889;
+    background: #8D98A7;
     cursor: pointer;
     border-radius: .625rem;
     transition: all 0.25s ease-out;
@@ -370,7 +399,7 @@ input[type='checkbox'] {
 }
 
 .collapsible-content .content-inner {
-    background: #426077;
+    background: #8D98A7;
     border-bottom: 1px solid #4c7889;
     border-bottom-left-radius: .625rem;
     border-bottom-right-radius: .625rem;
