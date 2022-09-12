@@ -224,12 +224,11 @@ body {
     height: 200px;
     border-radius: 8px;
     margin-right: 50px;
-
+    transition: 0.5s;
 }
 
 .sponsor:hover {
-    width: 210px;
-    height: 210px;
+    transform: scale(1.1);
     margin-right: 50px;
     transition: 0.5s;
     cursor: pointer;
@@ -435,7 +434,7 @@ input[type='checkbox'] {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 80%;
     border-radius: 8px;
 }
 
@@ -450,15 +449,19 @@ input[type='checkbox'] {
 }
 
 #contact-card {
-    background-color: white;
-    color: black;
     display: flex;
-    justify-content: space-evenly;
-    border-radius: 0 8px 8px 0;
-    width: 50%;
-    z-index: 9;
+    justify-content: space-between;
+    width: 100%;
+    font-family: 'Roboto mono';
 }
 
-#contact-card-left {}
 
-#contact-card-right {}
+.contact-card a {
+    text-decoration: none;
+    color: #d4dadf;
+}
+
+.contact-card a:hover {
+    transition: 0.5s;
+    color: #ffffff;
+}
