@@ -525,4 +525,31 @@ input[type='checkbox'] {
     }
 }
 
-@media only screen and (max-width: 550px) {}
+@media only screen and (max-width: 550px) {
+    .navbar-container a {
+        font-size: 14px;
+    }
+
+    #intro-txt-1 {
+
+        background-image: url("./img/logo.png");
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        font-family: 'Loveleaves';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3rem;
+        color: white;
+        white-space: nowrap;
+
+        width: 50%;
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: visible;
+    }
+
+}
