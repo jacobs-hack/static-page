@@ -40,6 +40,7 @@ body {
     padding: 0;
     background: rgb(31, 93, 47);
     background: linear-gradient(121deg, rgba(31, 93, 47, 1) 0%, rgba(0, 0, 0, 1) 51%, rgba(31, 93, 47, 1) 86%);
+    overflow-x: hidden;
 }
 
 .padding {
