@@ -516,3 +516,12 @@ input[type='checkbox'] {
     }
 
 }
+
+@media only screen and (max-width: 720px) {
+
+    .navbar-container a {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 550px) {}
