@@ -590,8 +590,21 @@ input[type='checkbox'] {
 
 @media only screen and (max-width: 520px) {
 
+    #about-title {
+        font-size: 3rem;
+    }
 
     .content-title {
-        font-size: 3rem;
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #about-title {
+        font-size: 2.5rem;
+    }
+
+    .content-title {
+        font-size: 2.7rem !important;
     }
 }
