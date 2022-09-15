@@ -212,20 +212,37 @@ body {
 #sponsors-list {
     width: 80%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, 200px);
+    grid-template-columns: repeat(auto-fit, 250px);
     justify-content: center;
     column-gap: 50px;
     row-gap: 50px;
     transition: 0.5s;
 }
 
+#sponsors-list a {
+    text-decoration: none;
+}
+
 .sponsor {
     background-color: #F3F7FB;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 8px;
     margin-right: 50px;
     transition: 0.5s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: 'Roboto mono';
+    color: #1B1716;
+}
+
+.sponsor img {
+    width: 90%;
+    padding: 4px;
 }
 
 .sponsor:hover {
@@ -234,6 +251,7 @@ body {
     transition: 0.5s;
     cursor: pointer;
 }
+
 
 #speakers {
     background-image: url("./img/speakers_mesh.png"), url("./img/speakers_top_right.png");
