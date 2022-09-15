@@ -534,6 +534,16 @@ input[type='checkbox'] {
         height: fit-content;
     }
 
+
+
+}
+
+
+@media only screen and (max-width: 780px) {
+    .contact-card {
+        width: 100%;
+    }
+
 }
 
 @media only screen and (max-width: 720px) {
@@ -541,7 +551,24 @@ input[type='checkbox'] {
     .navbar-container a {
         padding: 0;
     }
+
+    #about-title {
+        font-size: 4rem;
+    }
+
+    #contact-card {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-card {
+        text-align: center;
+    }
 }
+
+
+
 
 @media only screen and (max-width: 550px) {
     .navbar-container a {
@@ -549,25 +576,22 @@ input[type='checkbox'] {
     }
 
     #intro-txt-1 {
-
-        background-image: url("./img/logo.png");
-        background-position: center center;
-        background-size: contain;
-        background-repeat: no-repeat;
-
-        font-family: 'Loveleaves';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 3rem;
-        color: white;
-        white-space: nowrap;
-
-        width: 50%;
-        height: 60%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: visible;
+        font-size: 4rem;
     }
 
+    .content-title {
+        font-size: 4rem;
+    }
+
+    .contact-card {
+        width: fit-content;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+
+
+    .content-title {
+        font-size: 3rem;
+    }
 }
