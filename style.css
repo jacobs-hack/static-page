@@ -140,12 +140,39 @@ body {
     justify-content: center;
     align-items: center;
     overflow: visible;
+
 }
 
 #intro-txt-2 {
     font-family: "Loveleaves";
-    font-size: 2.5em;
+    font-size: 4rem;
+    padding-bottom: 2.5rem;
 }
+
+#register_button_intro {
+    font-family: 'loveleaves';
+    font-size: 2rem;
+    border-radius: 4px;
+    background-color: unset;
+    border-color: #F3F7FB;
+    background-color: #1F5D2F;
+    padding: 10px;
+    transition: 0.5;
+}
+
+#register_button_intro:hover {
+    background-color: #2e8844;
+    transition: 0.5s;
+}
+
+#register_button_intro a {
+    text-decoration: none;
+    color: #F3F7FB;
+    transition: 0.5s;
+}
+
+
+
 
 .titles {
     height: fit-content;
