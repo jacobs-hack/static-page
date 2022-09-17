@@ -172,8 +172,6 @@ body {
 }
 
 
-
-
 .titles {
     height: fit-content;
     font-size: 7rem;
@@ -190,7 +188,6 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0;
-
 }
 
 #about-title {
@@ -534,25 +531,11 @@ input[type='checkbox'] {
     }
 
     #intro-txt-1 {
-
-        background-image: url("./img/logo.png");
-        background-position: center center;
-        background-size: contain;
-        background-repeat: no-repeat;
-
-        font-family: 'Loveleaves';
-        font-style: normal;
-        font-weight: 400;
         font-size: 5rem;
-        color: white;
-        white-space: nowrap;
+    }
 
-        width: 50%;
-        height: 60%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: visible;
+    #intro-txt-2 {
+        font-size: 3rem;
     }
 
     .navbar-container {
@@ -570,15 +553,11 @@ input[type='checkbox'] {
     }
 
     #about-title {
-
         color: white;
         font-size: 5rem;
         font-family: 'Loveleaves';
         height: fit-content;
     }
-
-
-
 }
 
 
@@ -622,6 +601,10 @@ input[type='checkbox'] {
         font-size: 4rem;
     }
 
+    #intro-txt-2 {
+        font-size: 2rem;
+    }
+
     .content-title {
         font-size: 4rem;
     }
@@ -637,7 +620,7 @@ input[type='checkbox'] {
         font-size: 3rem;
     }
 
-    .content-title {
+    #intro .content-title {
         font-size: 2rem;
     }
 }
@@ -648,6 +631,6 @@ input[type='checkbox'] {
     }
 
     .content-title {
-        font-size: 2.7rem !important;
+        font-size: 2rem !important;
     }
 }
