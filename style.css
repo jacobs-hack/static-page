@@ -140,13 +140,12 @@ body {
     justify-content: center;
     align-items: center;
     overflow: visible;
-
 }
 
 #intro-txt-2 {
     font-family: "Loveleaves";
     font-size: 4rem;
-    padding-bottom: 2.5rem;
+    padding: 2rem 0 2rem 0;
 }
 
 #register_button_intro {
@@ -156,8 +155,8 @@ body {
     background-color: unset;
     border-color: #F3F7FB;
     background-color: #1F5D2F;
-    padding: 10px;
-    transition: 0.5;
+    padding: 5px;
+    transition: 0.5s;
 }
 
 #register_button_intro:hover {
