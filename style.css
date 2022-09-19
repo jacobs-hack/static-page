@@ -261,11 +261,17 @@ body {
 
     font-family: 'Roboto mono';
     color: #1B1716;
+    text-align: center;
 }
 
 .sponsor img {
     width: 90%;
     padding: 4px;
+}
+
+#sponsor-2 img {
+    height: 65%;
+    width: 65%;
 }
 
 .sponsor:hover {
