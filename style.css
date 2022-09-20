@@ -59,6 +59,9 @@ body {
     top: 0;
     height: 6vh;
     transition: 1s;
+    min-height: 20px;
+
+    z-index: 1;
 }
 
 .sticky {
@@ -383,15 +386,21 @@ body {
 
 .grid-cont {
     width: 80%;
-    height: 80%;
+    min-height: 80%;
+    height: fit-content;
+
     display: grid;
     grid-template-columns: 2fr 2fr;
-    gap: 7%;
+    row-gap: 0px;
+    column-gap: 5%;
+
     overflow: hidden;
+    transition: 0.5s;
 }
 
 .wrap-collabsible {
-    /* z-index: 0; */
+    transition: 1.5s;
+    /* height: fit-content; */
 }
 
 input[type='checkbox'] {
@@ -407,7 +416,9 @@ input[type='checkbox'] {
     background: #8D98A7;
     cursor: pointer;
     border-radius: .625rem;
-    transition: all 0.25s ease-out;
+    transition: 0.5s;
+    font-family: 'Roboto Mono' !important;
+
 }
 
 .lbl-toggle:hover {
@@ -415,7 +426,7 @@ input[type='checkbox'] {
 }
 
 .lbl-toggle::before {
-    content: ' ';
+    content: '';
     display: inline-block;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
@@ -434,15 +445,19 @@ input[type='checkbox'] {
     max-height: 0px;
     overflow: hidden;
     transition: max-height .25s ease-in-out;
+    font-family: 'Roboto Mono' !important;
+    transition: 0.5s;
 }
 
 .toggle:checked+.lbl-toggle+.collapsible-content {
     max-height: 100%;
+    transition: 1.0s;
 }
 
 .toggle:checked+.lbl-toggle {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
+    transition: 1.0s;
 }
 
 .collapsible-content .content-inner {
@@ -450,6 +465,7 @@ input[type='checkbox'] {
     border-bottom: 1px solid #4c7889;
     border-bottom-left-radius: .625rem;
     border-bottom-right-radius: .625rem;
+    transition: 1.0s;
 }
 
 .collapsible-content p {
@@ -457,16 +473,7 @@ input[type='checkbox'] {
     font-size: 16px;
     color: white;
     font-weight: 500;
-}
-
-#top-btn:hover {
-    background-color: rgba(255, 255, 255, 20%);
-    transition: 0.3s ease background-color;
-}
-
-#sched-table table {
-    width: 80%;
-    margin: 0 auto;
+    transition: 1.0s;
 }
 
 
