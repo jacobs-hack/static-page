@@ -49,8 +49,7 @@ body {
 }
 
 .content {
-    height: 100vh;
-    min-height: 700px;
+    min-height: fit-content !important;
 }
 
 #navbar {
@@ -112,6 +111,9 @@ body {
 
 
 #intro {
+
+    height: 100vh;
+
     background-image: url("./img/intro_top_left.png"), url("./img/into_top_right.png"), url("./img/intro_bottom_right.png"), url("./img/intro_mid_left.png"), url("./img/intro_mesh2.png");
     background-repeat: no-repeat;
     background-position: top left, top right, bottom right, bottom 20px left, center center;
@@ -296,18 +298,34 @@ body {
 
 }
 
+/* --------------- Schedule --------------- */
+
 #schedule {
+    min-height: 900px;
+
     background-repeat: no-repeat;
     background-position: center center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+
+    font-family: 'Roboto Mono';
+
+    padding: 100px 0 200px 0;
+
 }
+
+.header {
+    background-color: #1F5D2F !important;
+    font-weight: bold;
+}
+
 
 #schedule_table {
     display: flex;
     flex-direction: column;
+    width: 55%;
 }
 
 .schedule_row {
@@ -317,36 +335,48 @@ body {
     border-radius: 4px;
     margin: 4px;
     padding: 0;
-    height: fit-content;
+    height: 2rem;
+    transition: 0.5s;
+}
+
+.schedule_row:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 
 .row_time {
     display: flex;
-}
-
-.row_time {
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
     margin: 3px;
+
 }
 
-#schedule-description {
-    font-size: 1.3rem;
-    font-family: 'Roboto Mono';
-
-    text-align: center;
-    height: fit-content;
-    line-height: 2rem;
-    max-width: 90%;
-    min-width: 60%;
+.event {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+/* --------------- Schedule --------------- */
+
+
+/* --------------- Team --------------- */
+
+
 
 #team {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    padding-bottom: 100px;
 }
+
 
 #team_content {
     width: 80%;
@@ -355,24 +385,51 @@ body {
     column-gap: 50px;
     row-gap: 50px;
     justify-content: center;
+
+    font-family: 'Roboto Mono';
 }
 
 .person_content {
     border: 1px solid black;
     border-radius: 4px;
     width: 200px;
-    /* background-color: #1B1716; */
     text-align: center;
+    transition: 0.5s;
+}
+
+.person_content:hover {
+    cursor: pointer;
+    color: #8D98A7;
+
+    transition: 0.5s;
+}
+
+.person-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.person-txt>p:first-child {
+    font-weight: bold;
 
 }
 
+/* --------------- Team --------------- */
+
 /* --------------- FAQ ---------------- */
 #faq {
+
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: initial;
+
+    min-height: 900px;
+    height: 80vh;
+
 }
 
 #faq-title {
@@ -394,7 +451,7 @@ body {
     row-gap: 0px;
     column-gap: 5%;
 
-    overflow: hidden;
+    /* overflow: hidden; */
     transition: 0.5s;
 }
 
@@ -479,6 +536,8 @@ input[type='checkbox'] {
 
 /* --------------- FAQ ---------------- */
 
+/* --------------- Contact ---------------- */
+
 #contact {
     height: fit-content;
     display: flex;
@@ -489,7 +548,8 @@ input[type='checkbox'] {
     background-size: auto, auto;
     background-repeat: no-repeat, no-repeat;
     background-position: -20px 90px, right 380px;
-    /* border: 1px solid red; */
+
+    padding-bottom: 200px;
 }
 
 #map {
@@ -537,6 +597,8 @@ input[type='checkbox'] {
     background-position: center center;
 }
 
+/* --------------- Contact ---------------- */
+
 @media only screen and (max-width: 950px) {
     body {
         font-family: 'Courier New', Courier, monospace;
@@ -570,12 +632,23 @@ input[type='checkbox'] {
         font-family: 'Loveleaves';
         height: fit-content;
     }
+
+    #schedule_table {
+        width: 65%;
+        transition: 0.5s;
+    }
 }
 
 
 @media only screen and (max-width: 780px) {
     .contact-card {
         width: 100%;
+        transition: 0.5s;
+    }
+
+    #schedule_table {
+        width: 70%;
+        transition: 0.5s;
     }
 
 }
@@ -598,6 +671,11 @@ input[type='checkbox'] {
 
     .contact-card {
         text-align: center;
+    }
+
+    #schedule_table {
+        width: 85%;
+        transition: 0.5s;
     }
 }
 
