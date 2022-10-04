@@ -52,6 +52,15 @@ body {
     min-height: fit-content !important;
 }
 
+.titles {
+    height: fit-content;
+    font-size: 7rem;
+    font-family: 'Loveleaves';
+}
+
+
+/* --------------- Navbar --------------- */
+
 #navbar {
     position: fixed;
     width: 100%;
@@ -109,6 +118,9 @@ body {
     justify-self: flex-start;
 }
 
+/* --------------- Navbar --------------- */
+
+/* --------------- Intro --------------- */
 
 #intro {
 
@@ -175,12 +187,11 @@ body {
     transition: 0.5s;
 }
 
+/* --------------- Intro --------------- */
 
-.titles {
-    height: fit-content;
-    font-size: 7rem;
-    font-family: 'Loveleaves';
-}
+
+/* --------------- About --------------- */
+
 
 #about {
     background-image: url("./img/intro_title_top_left.png"), url("./img/about_mesh2.png");
@@ -225,6 +236,9 @@ body {
 
 }
 
+/* --------------- About --------------- */
+
+/* --------------- Sponsors --------------- */
 
 
 #sponsors {
@@ -286,6 +300,10 @@ body {
     cursor: pointer;
 }
 
+/* --------------- Sponsors --------------- */
+
+/* --------------- Speakers --------------- */
+
 
 #speakers {
     background-image: url("./img/speakers_mesh.png"), url("./img/speakers_top_right.png");
@@ -298,13 +316,19 @@ body {
 
 }
 
+/* --------------- Speakers --------------- */
+
+
 /* --------------- Schedule --------------- */
 
 #schedule {
     min-height: 900px;
 
+    background-image: url("./img/schedule_bottom_right.png");
+    background-size: auto;
+
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: right 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -421,6 +445,11 @@ body {
 /* --------------- FAQ ---------------- */
 #faq {
 
+    background-image: url("./img/faq_bottom_left.png");
+    background-size: auto;
+
+    background-repeat: no-repeat;
+    background-position: -15% 40%;
 
     display: flex;
     flex-direction: column;
@@ -598,6 +627,17 @@ input[type='checkbox'] {
 }
 
 /* --------------- Contact ---------------- */
+
+/* --------------- Footer ---------------- */
+#footer {
+    width: 100%;
+    font-family: 'Roboto Mono';
+    text-align: center;
+}
+
+/* --------------- Footer ---------------- */
+
+
 
 @media only screen and (max-width: 950px) {
     body {
