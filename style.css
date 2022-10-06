@@ -58,7 +58,6 @@ body {
     font-family: 'Loveleaves';
 }
 
-
 /* --------------- Navbar --------------- */
 
 #navbar {
@@ -242,10 +241,10 @@ body {
 
 
 #sponsors {
-    background-image: url("./img/sponsors_mesh.png"), url("./img/sponsors_mid_left.png");
+    background-image: url("./img/sponsors_mid_left.png");
     background-repeat: no-repeat;
-    background-position: center center, bottom left;
-    background-size: 100% 90%, auto;
+    background-position: bottom left;
+    background-size: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -266,7 +265,6 @@ body {
 }
 
 .sponsor {
-    background-color: #F3F7FB;
     width: 250px;
     height: 250px;
     border-radius: 8px;
@@ -279,7 +277,6 @@ body {
     align-items: center;
 
     font-family: 'Roboto mono';
-    color: #1B1716;
     text-align: center;
 }
 
@@ -300,7 +297,47 @@ body {
     cursor: pointer;
 }
 
+.sponsor-txt {
+    color: white;
+    font-size: 1.2rem
+}
+
 /* --------------- Sponsors --------------- */
+
+/* --------------- Previous Sponsors --------------- */
+
+#previous-sponsors {
+    padding-top: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#previous-sponsors-titles {
+    font-size: 2rem;
+}
+
+#previous-sponsors-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.previous-sponsor {
+    width: 200px;
+    height: auto;
+    padding: 5px;
+}
+
+
+
+/* --------------- Previous Sponsors --------------- */
+
 
 /* --------------- Speakers --------------- */
 
@@ -414,7 +451,6 @@ body {
 }
 
 .person_content {
-    border: 1px solid black;
     border-radius: 4px;
     width: 200px;
     text-align: center;
@@ -424,7 +460,6 @@ body {
 .person_content:hover {
     cursor: pointer;
     color: #8D98A7;
-
     transition: 0.5s;
 }
 
