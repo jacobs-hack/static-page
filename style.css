@@ -433,12 +433,18 @@ body {
     height: 200px;
     border-radius: 8px;
     object-fit: cover;
+    transition: transform 0.2s;
+}
+
+.person-img:hover {
+    transform: scale(1.05);
 }
 
 .person-txt>p:first-child {
     font-weight: bold;
 
 }
+
 
 /* --------------- Team --------------- */
 
