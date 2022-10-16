@@ -138,7 +138,7 @@ body {
 
 #intro-txt-1 {
 
-    background-image: url("./img/logo.png");
+    background-image: url("./img/Logo-v9-21.png");
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -160,7 +160,7 @@ body {
 
 #intro-txt-2 {
     font-family: "Loveleaves";
-    font-size: 4rem;
+    font-size: 3.5rem;
     padding: 2rem 0 2rem 0;
 }
 
